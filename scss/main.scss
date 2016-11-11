@@ -1,0 +1,42 @@
+@import "bourbon";
+@import "vars.scss";
+
+//Custom Styles Here
+
+#footer{
+  padding: 15px 0 15px;
+  background: #202020;
+  .politics{
+    float: left;
+    line-height: 29px;
+    a+a{
+      margin-left: 10px;
+      display: inline-block;
+    }
+  }
+  .logo-gs{
+    float: right;
+    width: 95px;
+    display: block;
+    svg{
+      fill: #666;
+      -webkit-transition: all 0.6s;
+      transition: all 0.6s;
+    }
+  }
+  a{
+    color: #65666a;
+    font-size: 14px;
+  }
+  a:hover{
+    color: #b46adf;
+    svg{
+      fill: #b46adf;
+    }
+  }
+}
+
+//ALWAYS END
+@import "sketches.scss";
+@import "media.scss";
+@import "../libs/niftymodal/component.css";

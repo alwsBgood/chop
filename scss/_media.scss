@@ -1,0 +1,49 @@
+@import "bourbon";
+@import "vars.scss";
+
+@media only screen and (max-width : 1200px) {
+
+}
+
+@media only screen and (max-width : 992px) {
+	.wrapper{
+		width: auto;
+	}
+	.pad{
+		padding: 50px 5px !important;
+	}
+	footer{
+		text-align: center;
+		.wrapper{
+			width: auto;
+		}
+		ul{
+			float: none;
+			display: inline-block;
+			text-align: center;
+			li{
+				margin-bottom: 10px;
+				margin-right: 0;
+				float: none;
+			}
+		}
+		.gs{
+			float: none;
+			display: block;
+		}
+	}
+}
+
+@media only screen and (max-width : 768px) {
+	
+}
+
+@media only screen and (max-width : 480px) {
+	.pad{
+		padding: 20px 5px !important;
+	}
+	.fancybox-close{
+	    top: 0!important;
+	    right: 0!important;
+	}
+}

@@ -1,0 +1,260 @@
+@import url(../libs/niftymodal/component.css);
+#footer {
+  padding: 15px 0 15px;
+  background: #202020; }
+  #footer .politics {
+    float: left;
+    line-height: 29px; }
+    #footer .politics a + a {
+      margin-left: 10px;
+      display: inline-block; }
+  #footer .logo-gs {
+    float: right;
+    width: 95px;
+    display: block; }
+    #footer .logo-gs svg {
+      fill: #666;
+      -webkit-transition: all 0.6s;
+      transition: all 0.6s; }
+  #footer a {
+    color: #65666a;
+    font-size: 14px; }
+  #footer a:hover {
+    color: #b46adf; }
+    #footer a:hover svg {
+      fill: #b46adf; }
+
+/* ================================*/
+/* CURSOR STYLES*/
+.touch_mode_grab {
+  cursor: grab !important;
+  cursor: -webkit-grab !important; }
+
+.touch_mode_grabbing {
+  cursor: grabbing !important;
+  cursor: -webkit-grabbing !important; }
+
+/* ==========================*/
+.md-modal.md-show {
+  opacity: 1; }
+
+.md-modal {
+  opacity: 0; }
+
+/* SCROLL BAR STYLES*/
+::-webkit-scrollbar {
+  width: 10px; }
+
+/* Track */
+::-webkit-scrollbar-track {
+  -webkit-box-shadow: inset 0 0 20px rgba(0, 0, 0, 0.3); }
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+  -webkit-border-radius: 0px;
+  border-radius: 0px;
+  background: blue;
+  -webkit-box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.5); }
+
+::-webkit-scrollbar-thumb:window-inactive {
+  background: blue; }
+
+.hidden {
+  height: 0;
+  width: 0; }
+
+div[id*="modal_callback"] {
+  max-width: 500px; }
+  div[id*="modal_callback"] h2 {
+    font-size: 30px;
+    line-height: 36px;
+    margin: 30px; }
+  div[id*="modal_callback"] .md-content {
+    padding: 20px;
+    background: #fff;
+    background-size: cover;
+    text-align: center; }
+  div[id*="modal_callback"] .form-wrap {
+    display: block; }
+  div[id*="modal_callback"] .field {
+    width: 300px; }
+    div[id*="modal_callback"] .field input {
+      width: 100%; }
+  div[id*="modal_callback"] .field + .field {
+    margin-top: 5px; }
+  div[id*="modal_callback"] textarea {
+    width: 100%;
+    height: 100px;
+    resize: none;
+    background: #fff;
+    border: 1px solid #b7b7b7;
+    padding: 5px 20px; }
+
+.field {
+  position: relative;
+  display: inline-block; }
+
+div[id*="modal_politics"] {
+  text-align: center; }
+  div[id*="modal_politics"] h2 {
+    padding-top: 20px; }
+
+.md_large {
+  max-width: 100%;
+  width: 90%; }
+
+.md_large .md-content > div.md_content {
+  padding: 0px 40px 0px; }
+
+.md_large .md-content p {
+  font-size: 0.9em;
+  line-height: 1.4; }
+
+.md_large .md-content p:first-child {
+  padding-top: 24px; }
+
+.md_large .md-content p:last-child {
+  padding-bottom: 24px; }
+
+.md_large .md_content {
+  max-height: 320px;
+  overflow: auto;
+  padding-top: 24px; }
+
+.md_content:before {
+  content: "";
+  position: absolute;
+  width: 100%;
+  left: 0;
+  height: 24px;
+  background-image: -webkit-gradient(linear, 0 0, 0 100%, from(white), to(rgba(255, 255, 255, 0)));
+  background-image: -webkit-linear-gradient(top, white, rgba(255, 255, 255, 0));
+  background-image: -webkit-gradient(linear, left top, left bottom, from(white), to(rgba(255, 255, 255, 0)));
+  background-image: linear-gradient(to bottom, white, rgba(255, 255, 255, 0));
+  background-repeat: repeat-x; }
+
+.md_content:after {
+  content: "";
+  position: absolute;
+  width: 100%;
+  left: 0;
+  height: 24px;
+  bottom: 0;
+  background-image: -webkit-gradient(linear, 0 0, 0 100%, from(rgba(255, 255, 255, 0)), to(white));
+  background-image: -webkit-linear-gradient(top, rgba(255, 255, 255, 0), white);
+  background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(255, 255, 255, 0)), to(white));
+  background-image: linear-gradient(to bottom, rgba(255, 255, 255, 0), white);
+  background-repeat: repeat-x; }
+
+.md-content h2 {
+  text-align: center; }
+
+.md_bottom {
+  padding: 12px 0 0 0; }
+
+.md-content .form_input {
+  width: 45%; }
+
+.form_icon {
+  position: absolute;
+  width: 40px;
+  color: #cfcfcf; }
+
+.form_icon i {
+  font-size: 18px;
+  line-height: 54px; }
+
+.allert, .allert_tell {
+  position: absolute;
+  z-index: 20;
+  top: 50%;
+  margin-top: -10px;
+  display: block;
+  right: 15px;
+  height: 20px;
+  width: 20px;
+  color: #FF6565;
+  cursor: default; }
+
+.allert:hover, .allert_tell:hover {
+  text-decoration: none; }
+
+.allert span, .allert_tell span {
+  display: none;
+  opacity: 0;
+  padding: 5px;
+  margin-left: 5px;
+  color: #000;
+  font-style: italic;
+  font-size: 13px;
+  -webkit-border-radius: 4px;
+  border-radius: 4px;
+  -webkit-transition: all 0.5s;
+  transition: all 0.5s;
+  min-width: 140px;
+  text-align: center; }
+
+.allert:hover span, .allert_tell:hover span {
+  border: 1px solid #FF6565;
+  background: #fff;
+  display: inline;
+  position: absolute;
+  color: #4e4e4e;
+  right: 24px;
+  top: -7px;
+  opacity: 1; }
+
+.btn_close_modal {
+  display: inline-block;
+  width: 25px;
+  height: 25px;
+  line-height: 24px;
+  text-align: center;
+  font-size: 18px;
+  position: absolute;
+  right: 4px;
+  top: 0px;
+  margin: 10px;
+  cursor: pointer;
+  -webkit-transition: -webkit-transform 1s;
+  transition: -webkit-transform 1s;
+  transition: transform 1s;
+  transition: transform 1s, -webkit-transform 1s;
+  -webkit-transform-origin: 50% 50%;
+  -ms-transform-origin: 50% 50%;
+  transform-origin: 50% 50%; }
+  .btn_close_modal a:hover {
+    color: #000; }
+    .btn_close_modal a:hover svg .a {
+      fill: #DD1A1E; }
+
+.t_small {
+  font-size: 14px; }
+
+@media only screen and (max-width: 992px) {
+  .wrapper {
+    width: auto; }
+  .pad {
+    padding: 50px 5px !important; }
+  footer {
+    text-align: center; }
+    footer .wrapper {
+      width: auto; }
+    footer ul {
+      float: none;
+      display: inline-block;
+      text-align: center; }
+      footer ul li {
+        margin-bottom: 10px;
+        margin-right: 0;
+        float: none; }
+    footer .gs {
+      float: none;
+      display: block; } }
+
+@media only screen and (max-width: 480px) {
+  .pad {
+    padding: 20px 5px !important; }
+  .fancybox-close {
+    top: 0 !important;
+    right: 0 !important; } }
