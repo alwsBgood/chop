@@ -28,11 +28,5 @@ button:hover {
   cursor: pointer; }
 
 .hidden {
-  display: none; }
-
-.wrapper {
-  width: 960px;
-  overflow: hidden;
-  -webkit-box-sizing: border-box;
-  box-sizing: border-box;
-  margin: 0 auto; }
+  width: 0;
+  height: 0; }

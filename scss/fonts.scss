@@ -1,4 +1,10 @@
 @import "bourbon";
 
-@include font-face("RobotoRegular", "../fonts/RobotoRegular/RobotoRegular", $file-formats: eot woff ttf);
-@include font-face("FontAwesome", "../fonts/FontAwesome/FontAwesome", $file-formats: eot woff ttf);
+@include font-face("Agency", "fonts/AGENCYB", $file-formats: woff);
+@include font-face("Akrobat-Black", "fonts/Akrobat-Black", $file-formats: woff);
+@include font-face("Akrobat-ExtraBold", "fonts/Akrobat-ExtraBold", $file-formats: woff);
+@include font-face("Akrobat-Light", "fonts/Akrobat-Light", $file-formats: woff);
+@include font-face("HelveticaNeueCyr-Bold", "fonts/HelveticaNeueCyr-Bold", $file-formats: woff);
+@include font-face("HelveticaNeueCyr-Light", "fonts/HelveticaNeueCyr-Light", $file-formats: woff);
+@include font-face("HelveticaNeueCyr-Roman", "fonts/HelveticaNeueCyr-Roman", $file-formats: woff);
+@include font-face("HelveticaNeueCyr-Thin", "fonts/HelveticaNeueCyr-Thin", $file-formats: woff);

@@ -168,3 +168,22 @@ $(window).scroll(function() {
   });
 
 
+$(document).ready(function() {
+    $('.slider_goods').slick({
+        slidesToShow: 3,
+        dots: true,
+        arrows: true,
+        slidesToScroll: 1,
+        autoplay: false,
+        responsive: [{
+                breakpoint: 767,
+                settings: {
+                    autoplay: false,
+                }
+            }
+            // You can unslick at a given breakpoint now by adding:
+            // settings: "unslick"
+            // instead of a settings object
+        ]
+    });
+});

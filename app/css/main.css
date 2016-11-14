@@ -1,4 +1,5 @@
 @import url(../libs/niftymodal/component.css);
+@import url(../libs/slick/slick.min.css);
 #footer {
   padding: 15px 0 15px;
   background: #202020; }

@@ -1,11 +1,47 @@
 @font-face {
-  font-family: "RobotoRegular";
+  font-family: "Agency";
   font-style: normal;
   font-weight: normal;
-  src: url("../fonts/RobotoRegular/RobotoRegular.eot?#iefix") format("embedded-opentype"), url("../fonts/RobotoRegular/RobotoRegular.woff") format("woff"), url("../fonts/RobotoRegular/RobotoRegular.ttf") format("truetype"); }
+  src: url("fonts/AGENCYB.woff") format("woff"); }
 
 @font-face {
-  font-family: "FontAwesome";
+  font-family: "Akrobat-Black";
   font-style: normal;
   font-weight: normal;
-  src: url("../fonts/FontAwesome/FontAwesome.eot?#iefix") format("embedded-opentype"), url("../fonts/FontAwesome/FontAwesome.woff") format("woff"), url("../fonts/FontAwesome/FontAwesome.ttf") format("truetype"); }
+  src: url("fonts/Akrobat-Black.woff") format("woff"); }
+
+@font-face {
+  font-family: "Akrobat-ExtraBold";
+  font-style: normal;
+  font-weight: normal;
+  src: url("fonts/Akrobat-ExtraBold.woff") format("woff"); }
+
+@font-face {
+  font-family: "Akrobat-Light";
+  font-style: normal;
+  font-weight: normal;
+  src: url("fonts/Akrobat-Light.woff") format("woff"); }
+
+@font-face {
+  font-family: "HelveticaNeueCyr-Bold";
+  font-style: normal;
+  font-weight: normal;
+  src: url("fonts/HelveticaNeueCyr-Bold.woff") format("woff"); }
+
+@font-face {
+  font-family: "HelveticaNeueCyr-Light";
+  font-style: normal;
+  font-weight: normal;
+  src: url("fonts/HelveticaNeueCyr-Light.woff") format("woff"); }
+
+@font-face {
+  font-family: "HelveticaNeueCyr-Roman";
+  font-style: normal;
+  font-weight: normal;
+  src: url("fonts/HelveticaNeueCyr-Roman.woff") format("woff"); }
+
+@font-face {
+  font-family: "HelveticaNeueCyr-Thin";
+  font-style: normal;
+  font-weight: normal;
+  src: url("fonts/HelveticaNeueCyr-Thin.woff") format("woff"); }

@@ -37,12 +37,6 @@ button{
 }
 
 .hidden{
-	display: none;
-}
-
-.wrapper{
-	width: 960px;
-	overflow: hidden;
-	box-sizing: border-box;
-	margin: 0 auto;
+	width: 0;
+	height: 0;
 }
