@@ -24,10 +24,14 @@
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
 	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
 
-	<link rel="shortcut icon" href="img/favicon/favicon.png" type="image/x-icon">
-	<link rel="apple-touch-icon" href="img/favicon/apple-touch-icon.png">
-	<link rel="apple-touch-icon" sizes="72x72" href="img/favicon/apple-touch-icon-72x72.png">
-	<link rel="apple-touch-icon" sizes="114x114" href="img/favicon/apple-touch-icon-114x114.png">
+    <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+    <link rel="icon" type="image/png" href="/favicon-32x32.png" sizes="32x32">
+    <link rel="icon" type="image/png" href="/favicon-16x16.png" sizes="16x16">
+    <link rel="manifest" href="/manifest.json">
+    <meta name="apple-mobile-web-app-title" content="GM">
+    <meta name="application-name" content="GM">
+    <meta name="theme-color" content="#ffffff">
+
 
 	<!-- RESET -->
 	<style>html,body,div,span,applet,object,iframe,h1,h2,h3,h4,h5,h6,p,blockquote,pre,a,abbr,acronym,address,big,cite,code,del,dfn,em,img,ins,kbd,q,s,samp,small,strike,strong,sub,sup,tt,var,b,u,i,center,dl,dt,dd,ol,ul,li,fieldset,form,label,legend,table,caption,tbody,tfoot,thead,tr,th,td,article,aside,canvas,details,embed,figure,figcaption,footer,header,hgroup,menu,nav,output,ruby,section,summary,time,mark,audio,video{margin:0;padding:0;border:0;font-size:100%;font:inherit;vertical-align:baseline}article,aside,details,figcaption,figure,footer,header,hgroup,menu,nav,section{display:block}body{line-height:1}ol,ul{list-style:none}blockquote,q{quotes:none}blockquote:before,blockquote:after,q:before,q:after{content:'';content:none}table{border-collapse:collapse;border-spacing:0}*{box-sizing:border-box}html,body{height:100%;margin:0;width:100%}.container{max-width:1200px;margin:0 auto}a,button,img,input{-webkit-transition:all .5s;transition:all .5s}button,button:active,button:focus,input,input:active,input:focus,textarea,textarea:active,textarea:focus{outline:none}button,button:hover,a,a:hover{text-decoration:none;cursor:pointer}.clear{clear:both;display:block;overflow:hidden;visibility:hidden;width:0;height:0}.clearfix:before,.clearfix:after,.container:before,.container:after{content:'.';display:block;overflow:hidden;visibility:hidden;font-size:0;line-height:0;width:0;height:0}.clearfix:after,.container:after{clear:both}.left{float:left}.right{float:right}.tl{text-align:left}.tr{text-align:right}.tc{text-align:center}.flex{display:-webkit-box;display:flex;-webkit-box-align:center;align-items:center;-webkit-box-pack:center;justify-content:center}</style>
@@ -55,22 +59,23 @@
 
 </head>
 
-<body>
-
-    <section id="sec_01">
+<body data-img="img/bike.jpg">
+<div id="fullpage">
+    <section class="section" id="sec_01">
+    <p class="bg_text">CHOPP</p>
         <div class="container">
             <div class="col-6 col-push-6">
-                <h1>CHOPP</h1>
-                <h2>Чтобы слиться с дорогой, <br> мотоциклу нужны колеса </h2>
+                
+                <h1>Чтобы слиться с дорогой, <br> мотоциклу нужны колеса </h1>
                 <p class="title">Чтобы слиться с мотоциклом, <span>байкеру нужна обувь</span></p>
                 <p class="text">Xelement, пора отправляться в путь</p>
-                <a href="#sec_05" class="scroll flex btn">подобрать обувь</a>
-                <a href="#sec_02" class="btndwn scroll">Next</a>
+                <a href="#fifthPage" class="flex btn"><span>подобрать обувь</span></a>
+                <a href="#secondPage" class="btndwn">Next</a>
             </div>
         </div>
     </section>
-
-    <section id="sec_02">
+    
+    <section class="section" id="sec_02">
         <div class="container">
             <div class="col-6">
                 <h2>Почему стоит надеть Хelement <br> и умчаться в даль</h2>
@@ -79,51 +84,51 @@
                     <li><span class="number">02.</span><span>Адекватная цена</span> - как 10 литров пива на Oktoberfest </li>
                     <li><span class="number">03.</span><span>Ограниченные поставки</span> - эксклюзивный образ даже  <br> на байкерских слетах </li>
                     <li><span class="number">04.</span><span>Надежная защита от грязи и воды </span>даже <br> в длительных поездках </li>
-                    <li><span class="number">05.</span><span><Комфорт</span>  вы забываете об усталости в ногах  </li>
+                    <li><span class="number">05.</span><span>Комфорт</span>  вы забываете об усталости в ногах  </li>
                     <li><span class="number">06.</span><span>На каждый день</span> - пока байк в гараже, обувь поможет <br> дождаться следующей поездки </li>
-                    <a href="#sec_03" class="btndwn scroll">Next</a>
+                    <a href="#thirdPage" class="btndwn">Next</a>
                 </ul>
             </div>
         </div>
     </section>
-
-    <section id="sec_03">
+    
+    <section class="section" id="sec_03">
         <div class="container">
             <div class="col-6 col-push-6">
                 <h2><span class="orange">Хelement</span> - такая же надежная, <br> как фирменный байк </h2>
                 <ul>
-                    <li><span>Принимает форму стопы</span> благодаря пробковой <br> прокладке</li>
-                    <li><span>Сглаживает неровности при ходьбе</span> и обеспечивает  <br> абсолютный комфорт</li>
-                    <li><span>Прочная и стойкая к износу</span> - проверено практикой <br> на байкерских слетах</li>
-                    <li><span>Легко чинится</span> - срок службы до 20 лет благодаря <br> технологии Goodyear Welted</li>
-                    <li><span>Подошва, устойчивая к маслу</span> - всегда как новая</li>
+                    <li><span class="orange">•</span> <span>Принимает форму стопы</span> благодаря пробковой <br> прокладке</li>
+                    <li><span class="orange">•</span> <span>Сглаживает неровности при ходьбе</span> и обеспечивает  <br> абсолютный комфорт</li>
+                    <li><span class="orange">•</span> <span>Прочная и стойкая к износу</span> - проверено практикой <br> на байкерских слетах</li>
+                    <li><span class="orange">•</span> <span>Легко чинится</span> - срок службы до 20 лет благодаря <br> технологии Goodyear Welted</li>
+                    <li><span class="orange">•</span> <span>Подошва, устойчивая к маслу</span> - всегда как новая</li>
                 </ul>
                 <p class="title">Пора собираться в путь!</p>
                 <p class="text">Закажите новую пару обуви и получите <span class="orange">средство для ухода в подарок</span></p>
-                <a href="#sec_05" class="scroll flex btn">подобрать обувь</a>
-                <a href="#sec_03" class="btndwn scroll">Next</a>
+                <a href="#fifthPage" class="flex btn"><span>подобрать обувь</span></a>
+                <a href="#fourthPage" class="btndwn">Next</a>
             </div>
         </div>
     </section>
-
-    <section id="sec_04">
+    
+    <section class="section" id="sec_04">
         <div class="container">
             <div class="col-6">
-                <h2>Обувь Xelement. </h2>
+                <h2 class="orange">Обувь Xelement. </h2>
                 <p>Эффектная как чоппер, комфортная как круизер</p>
                 <ul>
-                    <li><img src="img/list-ok.png" alt=""><span></span>Натуральная кожа  отличается гигроскопичностью,  <br> эластичностью и прочностью</li>
-                    <li><img src="img/list-ok.png" alt=""><span></span>Внутри тепло  - естественный теплообмен между <br> человеком и окружающей средой </li>
-                    <li><img src="img/list-ok.png" alt=""><span></span>Обувь Xelement дышит - комфорт с первых минут <br> использования</li>
-                    <li><img src="img/list-ok.png" alt=""><span></span>Приятно держать в руках идеально обработанную, <br> хорошо пахнущую кожу </li>
-                    <li><img src="img/list-ok.png" alt=""><span></span>Пятна самоликвидируются - со временем масло <br> полностью проходит через кожу</li>
+                    <li><img src="img/list-ok.png" alt=""><span>Натуральная кожа</span>  отличается гигроскопичностью,  <br> эластичностью и прочностью</li>
+                    <li><img src="img/list-ok.png" alt=""><span>Внутри тепло  - </span>естественный теплообмен между <br> человеком и окружающей средой </li>
+                    <li><img src="img/list-ok.png" alt=""><span>Обувь Xelement дышит - </span> комфорт с первых минут <br> использования</li>
+                    <li><img src="img/list-ok.png" alt=""><span>Приятно держать в руках </span> идеально обработанную, <br> хорошо пахнущую кожу </li>
+                    <li><img src="img/list-ok.png" alt=""><span>Пятна самоликвидируются -</span> со временем масло <br> полностью проходит через кожу</li>
                 </ul>
-                <a href="#sec_05" class="btndwn scroll">Next</a>
+                <a href="#fifthPage" class="btndwn">Next</a>
             </div>
         </div>
     </section>
-
-    <section id="sec_05">
+    
+    <section class="section" id="sec_05">
         <div class="container">
             <div class="col-12">
                 <h2>Выбирайте обувь <br> под свой стиль вождения</h2>
@@ -131,102 +136,118 @@
             <div class="col-12">
                 <div class="slider_goods">
                     <div class="sldier_goods--slide">
-                        <div class="item">
-                            <img src="img/boots-1.png" alt="Boots">
-                            <p class="name">Motorcycle  Harness Biker Boot</p>
-                            <div class="price_block">
-                                <p class="price">ЦЕНА: </p>
-                                <p class="old--price"></p>
+                        <a class="md-trigger" data-modal="modal_callback">
+                            <div class="item">
+                                <img src="img/boots-1.png" alt="Boots">
+                                <p class="name">Motorcycle  Harness Biker Boot</p>
+                                <div class="price_block">
+                                    <p class="price">ЦЕНА: </p>
+                                    <p class="old--price"></p>
+                                </div>
                             </div>
-                        </div>
+                        </a>
                     </div>
                     <div class="sldier_goods--slide">
-                        <div class="item">
-                            <img src="img/boots-1.png" alt="Boots">
-                            <p class="name">Motorcycle  Harness Biker Boot</p>
-                            <div class="price_block">
-                                <p class="price">ЦЕНА: </p>
-                                <p class="old--price"></p>
+                        <a class="md-trigger" data-modal="modal_callback">
+                            <div class="item">
+                                <img src="img/boots-1.png" alt="Boots">
+                                <p class="name">Motorcycle  Harness Biker Boot</p>
+                                <div class="price_block">
+                                    <p class="price">ЦЕНА: </p>
+                                    <p class="old--price"></p>
+                                </div>
                             </div>
-                        </div>
+                        </a>
                     </div>
                     <div class="sldier_goods--slide">
-                        <div class="item">
-                            <img src="img/boots-1.png" alt="Boots">
-                            <p class="name">Motorcycle  Harness Biker Boot</p>
-                            <div class="price_block">
-                                <p class="price">ЦЕНА: </p>
-                                <p class="old--price"></p>
+                        <a class="md-trigger" data-modal="modal_callback">
+                            <div class="item">
+                                <img src="img/boots-1.png" alt="Boots">
+                                <p class="name">Motorcycle  Harness Biker Boot</p>
+                                <div class="price_block">
+                                    <p class="price">ЦЕНА: </p>
+                                    <p class="old--price"></p>
+                                </div>
                             </div>
-                        </div>
+                        </a>
                     </div>
                     <div class="sldier_goods--slide">
-                        <div class="item">
-                            <img src="img/boots-1.png" alt="Boots">
-                            <p class="name">Motorcycle  Harness Biker Boot</p>
-                            <div class="price_block">
-                                <p class="price">ЦЕНА: </p>
-                                <p class="old--price"></p>
+                        <a class="md-trigger" data-modal="modal_callback">
+                            <div class="item">
+                                <img src="img/boots-1.png" alt="Boots">
+                                <p class="name">Motorcycle  Harness Biker Boot</p>
+                                <div class="price_block">
+                                    <p class="price">ЦЕНА: </p>
+                                    <p class="old--price"></p>
+                                </div>
                             </div>
-                        </div>
+                        </a>
                     </div>
                     <div class="sldier_goods--slide">
-                        <div class="item">
-                            <img src="img/boots-1.png" alt="Boots">
-                            <p class="name">Motorcycle  Harness Biker Boot</p>
-                            <div class="price_block">
-                                <p class="price">ЦЕНА: </p>
-                                <p class="old--price"></p>
+                        <a class="md-trigger" data-modal="modal_callback">
+                            <div class="item">
+                                <img src="img/boots-1.png" alt="Boots">
+                                <p class="name">Motorcycle  Harness Biker Boot</p>
+                                <div class="price_block">
+                                    <p class="price">ЦЕНА: </p>
+                                    <p class="old--price"></p>
+                                </div>
                             </div>
-                        </div>
+                        </a>
                     </div>
                     <div class="sldier_goods--slide">
-                        <div class="item">
-                            <img src="img/boots-1.png" alt="Boots">
-                            <p class="name">Motorcycle  Harness Biker Boot</p>
-                            <div class="price_block">
-                                <p class="price">ЦЕНА: </p>
-                                <p class="old--price"></p>
+                        <a class="md-trigger" data-modal="modal_callback">
+                            <div class="item">
+                                <img src="img/boots-1.png" alt="Boots">
+                                <p class="name">Motorcycle  Harness Biker Boot</p>
+                                <div class="price_block">
+                                    <p class="price">ЦЕНА: </p>
+                                    <p class="old--price"></p>
+                                </div>
                             </div>
-                        </div>
+                        </a>
                     </div>
                     <div class="sldier_goods--slide">
-                        <div class="item">
-                            <img src="img/boots-1.png" alt="Boots">
-                            <p class="name">Motorcycle  Harness Biker Boot</p>
-                            <div class="price_block">
-                                <p class="price">ЦЕНА: </p>
-                                <p class="old--price"></p>
+                        <a class="md-trigger" data-modal="modal_callback">
+                            <div class="item">
+                                <img src="img/boots-1.png" alt="Boots">
+                                <p class="name">Motorcycle  Harness Biker Boot</p>
+                                <div class="price_block">
+                                    <p class="price">ЦЕНА: </p>
+                                    <p class="old--price"></p>
+                                </div>
                             </div>
-                        </div>
+                        </a>
                     </div>
                     <div class="sldier_goods--slide">
-                        <div class="item">
-                            <img src="img/boots-1.png" alt="Boots">
-                            <p class="name">Motorcycle  Harness Biker Boot</p>
-                            <div class="price_block">
-                                <p class="price">ЦЕНА: </p>
-                                <p class="old--price"></p>
+                        <a class="md-trigger" data-modal="modal_callback">
+                            <div class="item">
+                                <img src="img/boots-1.png" alt="Boots">
+                                <p class="name">Motorcycle  Harness Biker Boot</p>
+                                <div class="price_block">
+                                    <p class="price">ЦЕНА: </p>
+                                    <p class="old--price"></p>
+                                </div>
                             </div>
-                        </div>
+                        </a>
                     </div>
                 </div>
-                <a href="#sec_06" class="btndwn scroll">Next</a>
+                <a href="#sixthPage" class="btndwn">Next</a>
             </div>
         </div>
     </section>
-
-    <section id="sec_06">
+    
+    <section class="section" id="sec_06">
         <div class="container">
             <div class="col-6">
                 <h2><span class="orange">Внимание!</span> Покупка обуви Xelement защищена гарантией </h2>
                 <p>Если в процессе примерки вы убедились, что обувь слишком мала или наоборот - велика, мы оперативно произведем замену или <span>вернем деньги в 100% объеме.</span></p>
-                <a href="#sec_07" class="btndwn scroll">Next</a>
+                <a href="#seventhPage" class="btndwn">Next</a>
             </div>
         </div>
     </section>
-
-    <section id="sec_07">
+    
+    <section class="section" id="sec_07">
         <div class="container">
             <div class="col-6 col-push-6">
                 <h2>Как заказать обувь <br> под стать своему байку?</h2>
@@ -237,12 +258,12 @@
                     <li><span>4.</span>Отправляйтесь навстречу новым приключениям.</li>
                 </ul>
                 <a class="md-trigger" data-modal="modal_callback">оставить заявку </a>
-                <a href="#sec_08" class="btndwn scroll">Next</a>
+                <a href="#eightPage" class="btndwn">Next</a>
             </div>
         </div>
     </section>
-
-    <section id="sec_08">
+    
+    <section class="section" id="sec_08">
         <div class="container">
             <div class="col-6">
                 <h2>Путеводитель по байкерской обуви</h2>
@@ -252,76 +273,76 @@
                     <li><span class="orange">Вставки EVA </span> не имеют ничего общего с пластиком и резиной. Это современная пена с тысячами пузырьков внутри. Легкий и удивительно гибкий материал. При каждом шаге подошва обуви со вставками EVA “выдыхает” немного воздуха. Как только нога поднимается вверх, объем возвращается обратно.</li>
                     <li><span class="orange">Тактический стиль</span> - трендовое направление в одежде, которое вышло в массы из полиции и правоохранительных структур. Сегодня “тактику” носят все, кто ведет активный образ жизни. И в первую очередь - это байкеры, поклонники пейнтбола, диггеры и другие фанаты экстремальных прогулок. </li>
                 </ul>
-                <a href="#sec_09" class="btndwn scroll">Next</a>
+                <a href="#ninthPage" class="btndwn">Next</a>
             </div>
         </div>
     </section>
-
-    <section id="sec_09">
+    
+    <section class="section" id="sec_09">
         <div class="container">
             <div class="col-6 col-push-5">
                 <h2>Хотите проконсультироваться <br> перед очередной поездкой?</h2>
                 <p>Наш менеджер уже поставил свой байк в гараж <br> и сейчас перезвонит вам.</p>
                 <a data-modal="modal_callback" class="md-trigger">Заказать консультацию</a>
-                <a href="#sec_08" class="btndwn scroll">Previous</a>
+                <a href="#eightPage" class="btndwn">Previous</a>
             </div>
         </div>
-    </section>
-
-    <section id="sec_10">
-        <div class="container">
-            <div class="col-12">
-                <ul class="social">
-                    <li></li>
-                    <li></li>
-                    <li></li>
-                </ul>
-                <div class="phones">
-                    <a href="80555874587">8 (055) 587 458 7</a>
-                    <a href="80555874587">8 (055) 587 458 7</a>
+        <div id="sec_10">
+            <div class="container">
+                <div class="col-12">
+                    <ul class="social">
+                        <li></li>
+                        <li></li>
+                        <li></li>
+                    </ul>
+                    <div class="phones">
+                        <a href="80555874587">8 (055) 587 458 7</a>
+                        <a href="80555874587">8 (055) 587 458 7</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div id="footer">
+            <div class="container">
+                <div class="col-12 tl">
+                    <div class="politics tl">
+                        <a class="md-trigger" data-modal="modal_politics_one">Политика  конфиденциальности</a>
+                        <a class="md-trigger" data-modal="modal_politics_two">Отказ от  ответственности</a>
+                        <a class="md-trigger" data-modal="modal_politics_three">Согласие с  рассылкой</a>
+                    </div>
+                    <a href="http://geniusstudio.me/" target="_blank" class="logo-gs">
+                        <svg width=95 version="1.1"  xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 136.8 44">
+                        <path class="st0" d="M6.9,10.6c0-3.1,1.4-4.3,3.6-4.3s3.6,1.2,3.6,4.3v4.7h6.5V11c0-7-3.5-11-10.2-11S0,4,0,11v18.1
+                            c2.3,0,4.6,0,6.9,0V10.6z"/>
+                        <path class="st0" d="M20.5,19.9h-9.6v6.2H14V29c2.1,0,4.3,0,6.5,0V19.9z"/>
+                        <path class="st0" d="M44.9,6.8V0.5H26.2V29c2.3,0,4.6,0,6.9,0v-3.9h9.4v-6.2h-9.4V6.8H44.9z"/>
+                        <path class="st0" d="M72.1,0.5H66v26.2L58.9,0.5h-8.6V29c2.1,0,4.1,0,6.2,0V12.6L61,29.1c3.7,0,7.4,0,11.2,0L72.1,0.5L72.1,0.5z"/>
+                        <path class="st0" d="M85.2,0.5h-6.9V29c2.3,0,4.6,0,6.9,0V0.5z"/>
+                        <path class="st0" d="M111.6,0.5h-6.5V29c2.2,0,4.4,0,6.5,0V0.5z"/>
+                        <path class="st0" d="M98,0.5h-6.9V29c2.3,0,4.6,0,6.9,0V0.5z"/>
+                        <path class="st0" d="M123.5,10.6c0-3.1,1.2-4.3,3.4-4.3s3.4,1.2,3.4,4.3v1.8h6.5V11c0-7-3.4-11-10.1-11c-6.7,0-10.1,4-10.1,11
+                            c0,9.7,8.1,12.9,11.7,18.1c2.5,0,5.3,0,7.8,0C133.4,20.6,123.5,18.3,123.5,10.6z"/>
+                        <g>
+                            <path class="st0" d="M36.2,43l0.6-0.7c0.6,0.5,1.1,0.8,1.9,0.8c0.6,0,1.1-0.3,1.1-0.8c0-0.4-0.2-0.7-1.3-0.9c-1.3-0.3-2-0.7-2-1.8
+                                c0-1,0.8-1.7,2-1.7c0.9,0,1.6,0.3,2.2,0.7l-0.6,0.8c-0.5-0.4-1.1-0.6-1.6-0.6c-0.6,0-1,0.3-1,0.7c0,0.5,0.3,0.7,1.4,0.9
+                                c1.3,0.3,1.9,0.8,1.9,1.8c0,1.1-0.9,1.8-2.1,1.8C37.8,44,36.9,43.7,36.2,43z"/>
+                            <path class="st0" d="M49.6,38.9h-1.9v-1h4.8v1h-1.9v5h-1.1L49.6,38.9L49.6,38.9z"/>
+                            <path class="st0" d="M59.8,41.4V38h1v3.4c0,1.1,0.6,1.7,1.5,1.7s1.5-0.6,1.5-1.7V38h1v3.4c0,1.8-1,2.7-2.5,2.7
+                                C60.8,44,59.8,43.1,59.8,41.4z"/>
+                            <path class="st0" d="M72.6,38h2.2c1.9,0,3.2,1.3,3.2,3s-1.3,3-3.2,3h-2.2V38z M74.8,42.9c1.2,0,2.1-0.8,2.1-2s-0.8-2-2.1-2h-1.2v4
+                                H74.8z"/>
+                            <path class="st0" d="M85.5,38h1v5.9h-1V38z"/>
+                            <path class="st0" d="M94.2,40.9c0-1.7,1.3-3.1,3.1-3.1s3.1,1.4,3.1,3.1c0,1.7-1.3,3.1-3.1,3.1C95.4,44,94.2,42.6,94.2,40.9z
+                                 M99.3,40.9c0-1.2-0.8-2.1-2-2.1s-2,0.9-2,2.1c0,1.2,0.8,2.1,2,2.1C98.4,43,99.3,42.1,99.3,40.9z"/>
+                        </g>
+                    </svg>
+                    </a>
+                    <div class="clear"></div>
                 </div>
             </div>
         </div>
     </section>
-	<footer id="footer">
-	    <div class="container">
-	        <div class="col-12 tl">
-	            <div class="politics tl">
-	                <a class="md-trigger" data-modal="modal_politics_one">Политика  конфиденциальности</a>
-	                <a class="md-trigger" data-modal="modal_politics_two">Отказ от  ответственности</a>
-	                <a class="md-trigger" data-modal="modal_politics_three">Согласие с  рассылкой</a>
-	            </div>
-	            <a href="http://geniusstudio.me/" target="_blank" class="logo-gs">
-	                <svg width=95 version="1.1"  xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 136.8 44">
-	                <path class="st0" d="M6.9,10.6c0-3.1,1.4-4.3,3.6-4.3s3.6,1.2,3.6,4.3v4.7h6.5V11c0-7-3.5-11-10.2-11S0,4,0,11v18.1
-	                    c2.3,0,4.6,0,6.9,0V10.6z"/>
-	                <path class="st0" d="M20.5,19.9h-9.6v6.2H14V29c2.1,0,4.3,0,6.5,0V19.9z"/>
-	                <path class="st0" d="M44.9,6.8V0.5H26.2V29c2.3,0,4.6,0,6.9,0v-3.9h9.4v-6.2h-9.4V6.8H44.9z"/>
-	                <path class="st0" d="M72.1,0.5H66v26.2L58.9,0.5h-8.6V29c2.1,0,4.1,0,6.2,0V12.6L61,29.1c3.7,0,7.4,0,11.2,0L72.1,0.5L72.1,0.5z"/>
-	                <path class="st0" d="M85.2,0.5h-6.9V29c2.3,0,4.6,0,6.9,0V0.5z"/>
-	                <path class="st0" d="M111.6,0.5h-6.5V29c2.2,0,4.4,0,6.5,0V0.5z"/>
-	                <path class="st0" d="M98,0.5h-6.9V29c2.3,0,4.6,0,6.9,0V0.5z"/>
-	                <path class="st0" d="M123.5,10.6c0-3.1,1.2-4.3,3.4-4.3s3.4,1.2,3.4,4.3v1.8h6.5V11c0-7-3.4-11-10.1-11c-6.7,0-10.1,4-10.1,11
-	                    c0,9.7,8.1,12.9,11.7,18.1c2.5,0,5.3,0,7.8,0C133.4,20.6,123.5,18.3,123.5,10.6z"/>
-	                <g>
-	                    <path class="st0" d="M36.2,43l0.6-0.7c0.6,0.5,1.1,0.8,1.9,0.8c0.6,0,1.1-0.3,1.1-0.8c0-0.4-0.2-0.7-1.3-0.9c-1.3-0.3-2-0.7-2-1.8
-	                        c0-1,0.8-1.7,2-1.7c0.9,0,1.6,0.3,2.2,0.7l-0.6,0.8c-0.5-0.4-1.1-0.6-1.6-0.6c-0.6,0-1,0.3-1,0.7c0,0.5,0.3,0.7,1.4,0.9
-	                        c1.3,0.3,1.9,0.8,1.9,1.8c0,1.1-0.9,1.8-2.1,1.8C37.8,44,36.9,43.7,36.2,43z"/>
-	                    <path class="st0" d="M49.6,38.9h-1.9v-1h4.8v1h-1.9v5h-1.1L49.6,38.9L49.6,38.9z"/>
-	                    <path class="st0" d="M59.8,41.4V38h1v3.4c0,1.1,0.6,1.7,1.5,1.7s1.5-0.6,1.5-1.7V38h1v3.4c0,1.8-1,2.7-2.5,2.7
-	                        C60.8,44,59.8,43.1,59.8,41.4z"/>
-	                    <path class="st0" d="M72.6,38h2.2c1.9,0,3.2,1.3,3.2,3s-1.3,3-3.2,3h-2.2V38z M74.8,42.9c1.2,0,2.1-0.8,2.1-2s-0.8-2-2.1-2h-1.2v4
-	                        H74.8z"/>
-	                    <path class="st0" d="M85.5,38h1v5.9h-1V38z"/>
-	                    <path class="st0" d="M94.2,40.9c0-1.7,1.3-3.1,3.1-3.1s3.1,1.4,3.1,3.1c0,1.7-1.3,3.1-3.1,3.1C95.4,44,94.2,42.6,94.2,40.9z
-	                         M99.3,40.9c0-1.2-0.8-2.1-2-2.1s-2,0.9-2,2.1c0,1.2,0.8,2.1,2,2.1C98.4,43,99.3,42.1,99.3,40.9z"/>
-	                </g>
-	            </svg>
-	            </a>
-	            <div class="clear"></div>
-	        </div>
-	    </div>
-	</footer>
+</div>
 
 	 <div class="hidden">
          <div class="md-modal md-effect-1" id="modal_callback">

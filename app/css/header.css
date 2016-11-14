@@ -2,9 +2,9 @@ body {
   position: relative;
   overflow-x: hidden;
   min-width: 320px;
-  font-size: 16px;
-  line-height: 1.6;
-  font-family: "RobotoRegular", sans-serif;
+  font: 18px/27px "HelveticaNeueCyr-Roman", sans-serif;
+  letter-spacing: .08em;
+  color: #14171c;
   background-color: #fff; }
 
 a, button, input, textarea {
@@ -30,3 +30,57 @@ button:hover {
 .hidden {
   width: 0;
   height: 0; }
+
+a.btn {
+  position: relative;
+  max-width: 290px;
+  width: 100%;
+  height: 60px;
+  padding: 0 15px;
+  background: #131313;
+  color: #fff;
+  text-align: center;
+  text-decoration: none;
+  text-transform: uppercase;
+  overflow: hidden;
+  font: 12px/20px "HelveticaNeueCyr-Roman", sans-serif;
+  letter-spacing: .14em;
+  -webkit-transition: all 0.2s ease;
+  transition: all 0.2s ease; }
+  a.btn span {
+    position: relative;
+    z-index: 10; }
+
+a.btn:after {
+  content: "";
+  position: absolute;
+  background: #ff6b19;
+  height: 0%;
+  left: 50%;
+  top: 50%;
+  width: 100%;
+  z-index: 2;
+  -webkit-transition: all .4s ease 0s;
+  transition: all .4s ease 0s;
+  -ms-transform: translateX(-50%) translateY(-50%) rotate(45deg);
+  -webkit-transform: translateX(-50%) translateY(-50%) rotate(45deg);
+  transform: translateX(-50%) translateY(-50%) rotate(45deg); }
+
+a.btn:hover:after {
+  height: 420%; }
+
+h1 {
+  color: #14171c;
+  font-family: "Akrobat-ExtraBold", sans-serif;
+  font-size: 45px;
+  line-height: 50px;
+  letter-spacing: 0.04em;
+  text-transform: uppercase; }
+
+h2 {
+  color: #14171c;
+  font-family: "Akrobat-ExtraBold", sans-serif;
+  font-size: 35px;
+  line-height: 45px;
+  letter-spacing: 0.04em;
+  text-transform: uppercase; }

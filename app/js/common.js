@@ -116,7 +116,7 @@ $(function() {
 //  CURSOR ON SLIDER HOVER FUNCTION
 
 $(document).ready(function() {
-jQuery(".slider").mousedown(function() {
+jQuery(".slider_goods").mousedown(function() {
     jQuery(this).removeClass("touch_mode_grab")
         .addClass("touch_mode_grabbing");
     }).mouseup(function() {
@@ -186,4 +186,11 @@ $(document).ready(function() {
             // instead of a settings object
         ]
     });
+});
+
+$(document).ready(function() {
+    $('#fullpage').fullpage({
+       anchors:['firstPage', 'secondPage', 'thirdPage', 'fourthPage', 'fifthPage', 'sixthPage', 'seventhPage', 'eightPage', 'ninthPage']
+    });
+
 });

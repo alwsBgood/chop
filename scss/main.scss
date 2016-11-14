@@ -2,6 +2,146 @@
 @import "vars.scss";
 
 //Custom Styles Here
+.orange{color:$orange;}
+
+#sec_01{
+  background: url(../img/sec_01-bg.png) top left 0px no-repeat;
+  background-size: cover;
+  position: relative;
+  .bg_text{
+    color: $orange;
+    font-family: $Agency;
+    mix-blend-mode: multiply;
+    font-size: 450px;
+    font-weight: 700;
+    line-height: 132px;
+    transform: rotate(-90deg);
+    position: absolute;
+    left: 177px;
+    bottom: 445px;
+  }
+  h1{margin: 370px -20px 32px 0}
+  .title{
+    font: 18px/20px $Helvetica_300;
+    letter-spacing: .14em;
+    margin-right: -20px;
+    span{
+      font-family: $Helvetica_700;
+    }
+  }
+  .text{
+    font: 16px/20px $Helvetica_100;
+    letter-spacing: 0.14em;
+    margin: 40px 0 20px;
+  }
+}
+
+#sec_02{
+  background: url(../img/sec_02-bg.jpg) top right 0px no-repeat;
+  background-size: cover;
+  h2{
+    margin: 0 0px 50px 0;
+  }
+  ul{
+    li{
+      font-family: $Helvetica_100;
+      .number{
+        color: $orange;
+        font: 20px $Akrobat_700;
+      }
+      span{font-family: $Helvetica_400}
+    }
+    li+li{margin-top: 20px;}
+  }
+}
+
+#sec_03{
+  background: url(../img/sec_03-bg.png) top right 0px no-repeat;
+  background-size: cover;
+  .col-6{margin-left: -30px;}
+  h2{
+    margin:100px 0 50px;
+  }
+  li{
+    font: 18px/27px $Helvetica_100;
+    .orange{
+      font-family: $Akrobat_900;
+    }
+    span{
+      font-family: $Helvetica_400;
+    }
+  }
+  li+li{margin-top: 20px;}
+  ul{margin-bottom: 30px;}
+  .title{
+    margin: 10px 0 20px;
+  }
+  .text{
+    font-family: $Helvetica_300;
+    margin-bottom: 30px;
+    span{
+      font-family: $Helvetica_400;
+    }
+  }
+}
+
+#sec_04{
+  background: url(../img/sec_04-bg.png) top right 0px no-repeat;
+  background-size: cover;
+  h2{margin: -190px 0 10px}
+  h2+p{font-family: $Helvetica_300;}
+  ul{margin: 30px 0 0;}
+  li{
+    font: 18px/27px $Helvetica_100;
+    span{
+      font-family: $Helvetica_400;
+    }
+    img{margin-right: 10px;}
+  }
+  li+li{margin-top: 20px;}
+}
+
+#sec_05{
+  background: url(../img/sec_05-bg.png) top right 0px no-repeat;
+  background-size: cover;
+  h2{margin-bottom: 50px;}
+  .item{
+    border: 2px solid #eee;
+    width: 360px;
+    height: 430px;
+    padding: 40px;
+    img{
+      margin: 0 auto 20px;
+    }
+    p{
+      color: #1a1a1a;
+      font-size: 13px;
+      line-height: 22px;
+      text-transform: uppercase;
+    }
+  }
+}
+
+#sec_06{
+  background: url(../img/sec_06-bg.png) top right 0px no-repeat;
+  background-size: cover;
+}
+
+#sec_07{
+  background: url(../img/sec_07-bg.png) top right 0px no-repeat;
+  background-size: cover;
+}
+
+#sec_08{
+  background: url(../img/sec_08-bg.png) top right 0px no-repeat;
+  background-size: cover;
+}
+
+#sec_09{
+  background: url(../img/sec_09-bg.png) top right 0px no-repeat;
+  background-size: cover;
+}
+
 
 #footer{
   padding: 15px 0 15px;
@@ -40,4 +180,5 @@
 @import "sketches.scss";
 @import "media.scss";
 @import "../libs/niftymodal/component.css";
-@import "../libs/slick/slick.min.css"
+@import "../libs/slick/slick.min.css";
+@import "../libs/fullPage/jquery.fullpage.min.css"

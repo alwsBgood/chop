@@ -5,9 +5,9 @@ body{
 	position: relative;
 	overflow-x: hidden;
 	min-width: 320px;
-	font-size: 16px;
-	line-height: 1.6;
-	font-family: "RobotoRegular", sans-serif;
+	font: 18px/27px  $Helvetica_400;
+  letter-spacing: .08em;
+  color: $black;
 	background-color: #fff;
 }
 
@@ -39,4 +39,74 @@ button{
 .hidden{
 	width: 0;
 	height: 0;
+}
+
+a.btn{
+  position: relative;
+  max-width: 290px;
+  width:100%;
+  height: 60px;
+  padding: 0 15px;
+  background: #131313;
+  color: #fff;
+  text-align: center;
+  text-decoration: none;
+  text-transform: uppercase;
+  overflow: hidden;
+  font: 12px/20px $Helvetica_400;
+  letter-spacing: .14em;
+  -webkit-transition: all 0.2s ease;
+  -moz-transition: all 0.2s ease;
+  -o-transition: all 0.2s ease;
+  transition: all 0.2s ease;
+  span{
+    position: relative;
+    z-index: 10;
+  }
+}
+a.btn:after{
+  content: "";
+  position: absolute;
+  background: #ff6b19;
+  height: 0%;
+  left: 50%;
+  top: 50%;
+  width: 100%;
+  z-index: 2;
+  -webkit-transition: all .4s ease 0s;
+  -moz-transition: all .4s ease 0s;
+  -o-transition: all .4s ease 0s;
+  transition: all .4s ease 0s;
+
+  -moz-transform: translateX(-50%) translateY(-50%) rotate(45deg);
+  -ms-transform: translateX(-50%) translateY(-50%) rotate(45deg);
+  -webkit-transform: translateX(-50%) translateY(-50%) rotate(45deg);
+  transform: translateX(-50%) translateY(-50%) rotate(45deg);
+}
+
+
+a.btn:hover:after{
+  height: 420%;
+}
+
+
+h1{
+  color: $black;
+  font-family: $Akrobat_700;
+  font-size: 45px;
+  line-height: 50px;
+  letter-spacing: 0.04em;
+  text-transform: uppercase;
+}
+h2{
+  color: $black;
+  font-family: $Akrobat_700;
+  font-size: 35px;
+  line-height: 45px;
+  letter-spacing: 0.04em;
+  text-transform: uppercase;
+}
+
+.btndwn{
+
 }

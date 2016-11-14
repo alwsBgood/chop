@@ -231,3 +231,68 @@ div[id*="modal_politics"]{
 .t_small{
         font-size: 14px;
 }
+
+
+.slick-dots {
+  position: absolute;
+  bottom: -40px;
+  display: block;
+  width: 100%;
+  text-align: center;
+}
+.slick-dots li {
+  display: inline-block;
+  height:12px;
+  width:12px;
+  margin: 0 5px;
+  padding: 0;
+  cursor: pointer;
+}
+.slick-dots li.slick-active button { background: none; }
+
+.slick-dots li button {
+  background-color: $orange;
+  border-radius: 50%;
+  border: 2px solid $orange;
+  color: transparent;
+  cursor: pointer;
+  display: block;
+  font-size: 0;
+  height: 12px;
+  line-height: 0;
+  outline: medium none;
+  padding: 2px;
+  width: 12px;
+}
+
+
+.slick-next{
+      z-index: 10;
+      right: 0;
+      background: url(../img/slider-next.png) top center no-repeat;
+    }
+.slick-prev{
+      background: url(../img/slider-prev.png) top center no-repeat;
+      z-index: 10;
+      right: 100px;
+  }
+
+.slick-next, .slick-prev{
+    position: absolute;
+    display: block;
+    cursor: pointer !important;
+    width: 75px;
+    height: 13px;
+    border: none;
+    outline: none;
+    top: -40px;
+  }
+
+.slick-slide{outline: none;}
+
+.slick-next:hover{
+
+}
+.slick-prev:hover{
+
+}
