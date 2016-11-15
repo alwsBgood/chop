@@ -2,34 +2,34 @@
 @import "vars.scss";
 
 @media (min-width: 1500px) and (max-width: 1900px){
+	// .btndwn{display:none}
 	#sec_01{
 		background-size: 100%;
 		background-position: left -50px top 0;
 		.bg_text{
 			left: -200px;
 		}
-		h1{
+		p.title{
 			margin-top: 400px;
 		}
 	}
 	#sec_02{
 		background-position: top 0 right -200px;
 	}
-	#sec_03{
-			h2{
-				background: #F6F6F6;
-		}
-	}
 	#sec_04{
 		background-position: top right -200px;
+	}
+	#sec_06, #sec_08{
+		background-position: top right -150px;
 	}
 }
 
 @media (min-width: 1201px) and (max-width: 1499px){
+	// .btndwn{display: none;}
 	#sec_01{
 		background-size: 110%;
 		background-position: left -50px top 0;
-		h1{
+		p.title{
 						margin-top: 400px;
 		}
 		.bg_text{
@@ -40,55 +40,288 @@
 	}
 	#sec_02{
 		background-position: top 0 right -300px;
+		h2{margin-top: -170px;}
 	}
 	#sec_03{
-		background-position: top -100px right -100px;
+		background-position: top -100px right 0px;
+		h2{
+			margin-top: 0;
+		}
 		.col-6{
-			margin-left: -230px;
+			margin-left: -30px;
 		}
 	}
 	#sec_04{
 		background-position: top right -300px;
 	}
+	#sec_06, #sec_08{
+		background-position: top right -150px;
+	}
+	#sec_08{
+		ul{
+			li{
+				font-size: 16px;
+			}
+			li+li{margin-top: 13px}
+		}
+	}
+	#sec_09{
+		background: url(../img/sec_09-bg-hd.png) top right no-repeat;
+		h2{
+			margin-top: 0px;
+		}
+	}
 }
 
 @media only screen and (max-width : 1200px) {
-
+	section, .fp-tableCell{height: auto !important;}
+	.btndwn{
+		position: static;
+		display: block;
+		width: 80px;
+		height: 20px;
+		margin: 40px auto;
+	}
+	#sec_01{
+		background-size: 80%;
+		text-align: center;
+		background-position: top 0 left -20px;
+		padding: 0 0 100px;
+		height: auto !important;
+		p.title{margin-top: 300px;}
+		.bg_text{
+			display:none;
+		}
+		.col-6{
+			width: 100%;
+			left: 0;
+		}
+		.btn{
+			margin: 30px auto 0px;
+		}
+	}
+	#sec_02{
+		padding: 0 0 300px;
+		height: auto !important;
+		.btndwn{display:none;}
+		background-size: 80%;
+		background-position: bottom right;
+		text-align: center;
+		.col-6{
+			width: 100%;
+			left: 0;
+		}
+	}
+	#sec_03{
+		padding: 60px 0 500px;
+		text-align: center;
+		background-size: 80%;
+		background-position: bottom left;
+		h2{margin: 0;}
+		.col-6{
+			width: 100%;
+			left: 0;
+			margin-left: 0;
+		}
+		.btn{
+			margin: 30px auto 0px;
+		}
+	}
+	#sec_04{
+		background-position: right bottom;
+		background-size: 80%;
+		padding: 40px 0 300px;
+		text-align: center;
+		h2{margin: 0;}
+		.col-6{
+			width: 100%;
+			left: 0;
+		}
+		.btn{
+			margin: 30px auto 0px;
+		}
+	}
+	#sec_05{
+		background: none;
+		padding: 100px 0;
+		.item{
+			width: 95%;
+			height: auto;
+			img{
+				width: 100%;
+			}
+		}
+	}
+	#sec_06{
+		h2{margin-top: 0;}
+		.btndwn{
+			margin: 40px 0;
+		}
+	}
+	#sec_07{
+		background: url(../img/sec_08-bg.png) bottom right  no-repeat;
+		background-size: 80%;
+		padding: 80px 0 300px;
+		text-align: center;
+		.col-6{
+			width: 100%;
+			left: 0;
+		}
+		.btn{
+			margin: 30px auto 0px;
+		}
+	}
+	#sec_08{
+		display: none;
+	}
+	#sec_09{
+		background: none;
+		padding: 50px 0 160px;
+		text-align: center;
+		h2{margin-top: 0}
+		.btn{
+			margin: 30px auto 40px;
+		}
+		.btndwn{display: none;}
+		.col-6{
+			width: 100%;
+			left: 0;
+		}
+	}
 }
 
 @media only screen and (max-width : 992px) {
-	footer{
+	#sec_01{
+		p.title{margin-top: 280px;}
+	}
+	#sec_02{
+		padding-bottom: 280px;
+	}
+	#sec_03{
+		padding-bottom: 400px;
+	}
+	#sec_04{
+		padding-bottom: 200px;
+	}
+	#sec_05{
 		text-align: center;
-		.wrapper{
-			width: auto;
-		}
-		ul{
-			float: none;
-			display: inline-block;
-			text-align: center;
-			li{
-				margin-bottom: 10px;
-				margin-right: 0;
-				float: none;
+		padding-bottom: 40px;
+		.item{
+			text-align: left;
+			p{
+				font-size: 11px;
 			}
 		}
-		.gs{
-			float: none;
-			display: block;
+	}
+	#sec_06{
+		padding: 40px 0 200px;
+		background-size: 80%;
+		background-position: bottom right;
+		text-align: center;
+		.col-6{
+			width: 100%;
+			left: 0;
+		}
+	}
+	#footer{
+		.politics{
+			margin-left: -20px;
+			a{font-size: 12px;}
 		}
 	}
 }
 
-@media only screen and (max-width : 768px) {
-	
+@media only screen and (max-width : 720px) {
+	#sec_01{
+		p.title{
+			margin-top: 230px;
+		}
+	}
+	#sec_02{
+		padding-bottom: 200px;
+	}
+	#sec_03{
+		padding-bottom: 315px;
+		ul{margin-top: 30px;}
+	}
+	#sec_04{
+		padding: 0 0 165px;
+	}
+	#sec_07{
+		padding: 49px 0 160px;
+	}
+	#sec_09{
+		padding-bottom: 0px;
+		.contacts{
+			position: static;
+		}
+			#footer{
+				text-align: center !important;
+				position: static;
+				.tl{text-align: center;}
+			.politics{
+				text-align: center !important;
+				float: none;
+			}
+			.logo-gs{
+				float: none;
+				margin-top: 20px;
+				display: inline-block;
+			}
+		}
+	}
 }
 
-@media only screen and (max-width : 480px) {
-	.pad{
-		padding: 20px 5px !important;
+
+
+@media only screen and (max-width : 500px) {
+	body{
+		font-size: 16px;
+		line-height: 22px;
 	}
-	.fancybox-close{
-	    top: 0!important;
-	    right: 0!important;
+	h2{
+		font-size: 26px;
+		line-height: 30px;
+	}
+	h1{
+		font-size: 30px;
+		line-height: 36px;
+	}
+	#sec_01{
+		padding-bottom: 20px;
+		background-size: 100%;
+		p.title{
+			margin-top: 185px;
+		}
+	}
+	#sec_02{
+		padding-bottom: 170px;
+		br{display:none;}
+	}
+	#sec_03{
+		padding:30px 0 215px;
+		br{display:none;}
+		ul li{
+			font-size: 16px;
+			line-height: 23px;
+		}
+	}
+	#sec_04{
+		padding: 0 0 100px;
+		ul li{
+			font-size: 16px;
+			line-height: 23px;
+		}
+	}
+	#sec_05{
+		.item{
+			padding: 10px;
+		}
+	}
+	#sec_06{
+		padding-bottom: 75px;
+	}
+	#sec_07{
+		padding: 49px 0 95px;
 	}
 }

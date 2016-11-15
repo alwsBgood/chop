@@ -41,7 +41,7 @@ button{
 	height: 0;
 }
 
-a.btn{
+.btn{
   position: relative;
   max-width: 290px;
   width:100%;
@@ -64,7 +64,7 @@ a.btn{
     z-index: 10;
   }
 }
-a.btn:after{
+.btn:after{
   content: "";
   position: absolute;
   background: #ff6b19;
@@ -85,8 +85,8 @@ a.btn:after{
 }
 
 
-a.btn:hover:after{
-  height: 420%;
+.btn:hover:after{
+  height: 320%;
 }
 
 
@@ -108,5 +108,64 @@ h2{
 }
 
 .btndwn{
+  position: absolute;
+  display: block;
+  color: $black;
+  font-family: $Akrobat_700;
+  font-size: 14px;
 
+  transform: rotate(-90deg);
+  transition: color 0,4s;
+}
+
+.btndwn:hover{
+  color: $orange;
+}
+
+.btndwn:before{
+  content: "";
+  position: absolute;
+  width: 80px;
+  height: 15px;
+  bottom: -20px;
+  left: 0;
+  background: url(../img/slider-prev.png) center no-repeat;
+}
+
+.orange{color:$orange;}
+
+#sec_01{
+  background: url(../img/sec_01-bg.png) top left 0px no-repeat;
+  background-size: cover;
+  position: relative;
+  .bg_text{
+    color: $orange;
+    font-family: $Agency;
+    mix-blend-mode: multiply;
+    font-size: 450px;
+    font-weight: 700;
+    line-height: 132px;
+    transform: rotate(-90deg);
+    position: absolute;
+    left: 177px;
+    bottom: 445px;
+  }
+  p.title{margin: 370px -20px 32px 0}
+  .title{
+    font: 18px/20px $Helvetica_300;
+    letter-spacing: .14em;
+    margin-right: -20px;
+    span{
+      font-family: $Helvetica_700;
+    }
+  }
+  .text{
+    font: 16px/20px $Helvetica_100;
+    letter-spacing: 0.14em;
+    margin: 40px 0 20px;
+  }
+  .btndwn{
+    top: 270px;
+    left: 450px;
+  }
 }

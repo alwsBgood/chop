@@ -176,9 +176,9 @@ $(document).ready(function() {
         slidesToScroll: 1,
         autoplay: false,
         responsive: [{
-                breakpoint: 767,
+                breakpoint: 600,
                 settings: {
-                    autoplay: false,
+                    slidesToShow: 2
                 }
             }
             // You can unslick at a given breakpoint now by adding:
@@ -190,7 +190,8 @@ $(document).ready(function() {
 
 $(document).ready(function() {
     $('#fullpage').fullpage({
-       anchors:['firstPage', 'secondPage', 'thirdPage', 'fourthPage', 'fifthPage', 'sixthPage', 'seventhPage', 'eightPage', 'ninthPage']
+       anchors:['firstPage', 'secondPage', 'thirdPage', 'fourthPage', 'fifthPage', 'sixthPage', 'seventhPage', 'eightPage', 'ninthPage'],
+        responsiveWidth: 1200
     });
 
 });

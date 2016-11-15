@@ -2,43 +2,13 @@
 @import "vars.scss";
 
 //Custom Styles Here
-.orange{color:$orange;}
 
-#sec_01{
-  background: url(../img/sec_01-bg.png) top left 0px no-repeat;
-  background-size: cover;
-  position: relative;
-  .bg_text{
-    color: $orange;
-    font-family: $Agency;
-    mix-blend-mode: multiply;
-    font-size: 450px;
-    font-weight: 700;
-    line-height: 132px;
-    transform: rotate(-90deg);
-    position: absolute;
-    left: 177px;
-    bottom: 445px;
-  }
-  h1{margin: 370px -20px 32px 0}
-  .title{
-    font: 18px/20px $Helvetica_300;
-    letter-spacing: .14em;
-    margin-right: -20px;
-    span{
-      font-family: $Helvetica_700;
-    }
-  }
-  .text{
-    font: 16px/20px $Helvetica_100;
-    letter-spacing: 0.14em;
-    margin: 40px 0 20px;
-  }
-}
 
 #sec_02{
   background: url(../img/sec_02-bg.jpg) top right 0px no-repeat;
   background-size: cover;
+  position: relative;
+
   h2{
     margin: 0 0px 50px 0;
   }
@@ -53,11 +23,17 @@
     }
     li+li{margin-top: 20px;}
   }
+  .btndwn{
+    top: 0px;
+    left: 575px;
+  }
 }
 
 #sec_03{
   background: url(../img/sec_03-bg.png) top right 0px no-repeat;
   background-size: cover;
+  position: relative;
+
   .col-6{margin-left: -30px;}
   h2{
     margin:100px 0 50px;
@@ -83,11 +59,17 @@
       font-family: $Helvetica_400;
     }
   }
+  .btndwn{
+    top: -20px;
+    left: -600px;
+  }
 }
 
 #sec_04{
   background: url(../img/sec_04-bg.png) top right 0px no-repeat;
   background-size: cover;
+  position: relative;
+
   h2{margin: -190px 0 10px}
   h2+p{font-family: $Helvetica_300;}
   ul{margin: 30px 0 0;}
@@ -99,16 +81,42 @@
     img{margin-right: 10px;}
   }
   li+li{margin-top: 20px;}
+  .btndwn{
+    top: -100px;
+    left: 580px;
+  }
 }
 
 #sec_05{
   background: url(../img/sec_05-bg.png) top right 0px no-repeat;
   background-size: cover;
+  position: relative;
+
   h2{margin-bottom: 50px;}
+
+  .sldier_goods--slide a{
+    display:block;
+    background: rgba(0,0,0,.5) url(../img/plus.png) top 50% center no-repeat;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+
+    position: absolute;
+    z-index: 10;
+    transition: opacity 0.4s;
+    opacity: 0;
+  }
+  .sldier_goods--slide a:hover{
+    opacity: 1;
+  }
   .item{
     border: 2px solid #eee;
+    position: relative;
     width: 360px;
     height: 430px;
+    top: 0;
+    left: 0;
     padding: 40px;
     img{
       margin: 0 auto 20px;
@@ -120,32 +128,159 @@
       text-transform: uppercase;
     }
   }
+  .btn{
+    width: 100%;
+    max-width: 360px;
+    margin: 70px auto 0;
+  }
+  a.btn:hover:after{
+    height: 420%;
+  }
+  .slick-next:before{
+    content : 'Next';
+    position: absolute;
+    top: -1px;
+    left: -26px;
+    transition: color 0.4s;
+
+    font-family: $Akrobat_700;
+  }
+  .slick-prev:before{
+    content : 'Previous';
+    position: absolute;
+    top: -1px;
+    right: -43px;
+    transition: color 0.4s;
+
+    font-family: $Akrobat_700;
+  }
 }
 
 #sec_06{
   background: url(../img/sec_06-bg.png) top right 0px no-repeat;
   background-size: cover;
+  position: relative;
+
+  h2{
+    margin-bottom: 30px;
+    margin-top: -300px;
+  }
+  p{
+    font-family: $Helvetica_300;
+    letter-spacing: 0.14em;
+    span{
+      font-family: $Helvetica_400;
+    }
+  }
+  .btndwn{
+    top: -250px;
+        left: 585px;
+  }
 }
 
 #sec_07{
   background: url(../img/sec_07-bg.png) top right 0px no-repeat;
   background-size: cover;
+  position: relative;
+
+  h2{margin: 0px 0 50px;}
+  ul{
+    li{
+      span{
+        font-family: $Helvetica_700;
+      }
+    }
+    li+li{margin-top: 30px;}
+  }
+  .btndwn{
+    top: 200px;
+    left: -170px;
+  }
 }
 
 #sec_08{
   background: url(../img/sec_08-bg.png) top right 0px no-repeat;
   background-size: cover;
+  position: relative;
+
+  h2{margin-bottom: 40px;}
+  ul{
+    li{
+      line-height: 25px;
+      font-family: $Helvetica_300;
+      span{
+        font-family: $Helvetica_400;
+      }
+    }
+    li+li{margin-top: 20px;}
+  }
+  .btndwn{
+    top: -50px;
+       left: 700px;
+  }
 }
 
 #sec_09{
   background: url(../img/sec_09-bg.png) top right 0px no-repeat;
   background-size: cover;
+  position: relative;
+  h2{margin: 240px 0 20px;}
+  p{font-family: $Helvetica_300;}
+  .btn{margin-top: 30px;}
+  .contacts{
+    position: absolute;
+    background-color: #252525;
+    bottom: 80px;
+    left: 0;
+    right: 0;
+    .phones{
+      float: right;
+    }
+    .social{
+      float: left;
+      margin-top: 20px;
+      li{
+        display: inline-block;
+        a{
+          font-size: 18px;
+        }
+      }
+      li+li{margin-left: 5px}
+    }
+    .container{
+      border-bottom: 2px solid #444;
+      font-family: $Helvetica_300;
+      padding: 15px 0 10px;
+      a{
+        color: #fff;
+        font-size: 14px;
+      }
+      a:hover{
+        color: $orange;
+      }
+    }
+  }
+  #footer{
+    position: absolute;
+    font-family: $Helvetica_300;
+    bottom: 0;
+    left: 0;
+    right: 0;
+  }
+  .btndwn{
+    top: 150px;
+    right: -100px;
+    transform: rotate(270deg);
+  }
+  .btndwn:before{
+    background: url(../img/slider-next.png) center no-repeat;
+  }
 }
 
 
 #footer{
-  padding: 15px 0 15px;
-  background: #202020;
+  padding: 25px 0 15px;
+  background-color: #252525;
   .politics{
     float: left;
     line-height: 29px;
@@ -159,19 +294,19 @@
     width: 95px;
     display: block;
     svg{
-      fill: #666;
+      fill: #fff;
       -webkit-transition: all 0.6s;
       transition: all 0.6s;
     }
   }
   a{
-    color: #65666a;
+    color: #fff;
     font-size: 14px;
   }
   a:hover{
-    color: #b46adf;
+    color: $orange;
     svg{
-      fill: #b46adf;
+      fill: $orange;
     }
   }
 }
@@ -181,4 +316,5 @@
 @import "media.scss";
 @import "../libs/niftymodal/component.css";
 @import "../libs/slick/slick.min.css";
-@import "../libs/fullPage/jquery.fullpage.min.css"
+@import "../libs/fullPage/jquery.fullpage.min.css";
+@import "../fonts/font-awesome/font-awesome.min.css"
