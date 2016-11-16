@@ -60,7 +60,7 @@ $(function() {
                      $('#modal_send').addClass('open');
                      $('div.md-show').removeClass('md-show');
                      $('form').trigger("reset");
-                     $("#call_ok")[0].click();
+                     // $("#call_ok")[0].click();
                   },
                   error: function(xhr, str) {
                     alert('Возникла ошибка: ' + xhr.responseCode);

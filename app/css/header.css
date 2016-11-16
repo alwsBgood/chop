@@ -154,8 +154,8 @@ h2 {
   width: 100%;
   height: 0;
   margin-left: 80px;
-  -webkit-transition: all .5s;
-  transition: all .5s;
+  -webkit-transition: all 1s;
+  transition: all 1s;
   overflow: hidden;
   display: -webkit-box;
   display: -webkit-flex;
@@ -192,8 +192,7 @@ h2 {
     font-family: "HelveticaNeueCyr-Light", sans-serif; }
 
 #modal_send.open {
-  height: auto;
-  bottom: 0; }
+  height: 100vh; }
 
 #modal_nav {
   position: absolute;
