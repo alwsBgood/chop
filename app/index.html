@@ -58,14 +58,96 @@
 </head>
 
 <body data-img="img/bike.jpg">
+
+
 <div id="fullpage">
-    <section class="section" id="sec_01">
+
+<section class="section" id="sec_01">
+<div id="nav">
+<div id="modal_send">
+    <h2> спасибо за заявку!</h2>
+    <p>Ваше сообщение отправленно, <br> наш менеджер свяжется с вами.</p>
+</div>
+<div id="modal_nav">
+    
+    <form  method="POST" class="form-inline" action="javascript:void(null);">
+    <h2>Заполните форму и наш менеджер свяжется с вами</h2>
+        <!-- Hidden Required Fields -->
+        <input type="hidden" name="project_name" value="Olinbuket">
+        <input type="hidden" name="admin_email" value="alien_202@mail.ru">
+        <input type="hidden" name="form_subject" value="Запись на курс">
+        <input type="hidden" name="goal" value="zayavka">
+        <!-- END Hidden Required Fields -->
+
+        <span class="field">
+            <input type="text" class="form-control name" name="name" required=""  placeholder="Ваше имя " />
+        </span>
+
+
+        <span class="field">
+            <input placeholder="Ваш телефон" type="tel" class="form-control" name="custom_tel" required="">
+        <!-- Если отправляем и на Гет РЕспонс тоже - меняем название поля name на то которое создали в компании ГетРЕспонса -->
+        </span>
+
+        <button type="submit" class="btn" name="send" ><span>Отправить</span></button>
+
+        <!-- Просто любое дополнительное поле -->
+        <!-- <input type="hidden" name="other_data" value="Любое значение" /> -->
+        <!-- Динамическое дополнительное поле для передачи данных с кнопок по всему сайту -->
+        <input type="hidden" class="pacet" name="form_pacet" value="">
+        <!-- GET RESPONCE INPUTS -->
+        <input type="hidden" name="start_day" value="0"/>
+        <!-- Если нужно отправлять и на почту и на GetResponse - указываем campaign_token -->
+        <input type="hidden" name="campaign_token" value=""/>
+        <!-- GET RESPONCE INPUTS -->
+        <div class="clear"></div>
+    </form>
+</div>
+    <p class="companie">CM</p>
+    <div class="wrapper" style="margin-top: 70px">
+      <svg id="menu" viewBox="0 0 800 600">
+        <path d="M300,220 C300,220 520,220 540,220 C740,220 640,540 520,420 C440,340 300,200 300,200" id="top"></path>
+        <path d="M300,320 L540,320" id="middle"></path>
+        <path d="M300,210 C300,210 520,210 540,210 C740,210 640,530 520,410 C440,330 300,190 300,190" id="bottom" transform="translate(480, 320) scale(1, -1) translate(-480, -318) "></path>
+      </svg>
+    </div>
+    <div class="inner">
+
+        <ul>
+            <li>
+                <a href="#firstPage">Главная страница</a>
+            </li>
+            <li>
+                <a href="#secondPage">Почему xelement</a>
+            </li>
+            <li>
+                <a href="#thirdPage">преимущества</a>
+            </li>
+            <li>
+                <a href="#fifthPage">Выбор обуви</a>
+            </li>
+            <li>
+                <a href="#sixthPage">Гарантия обуви</a>
+            </li>
+            <li>
+                <a href="#seventhPage">как заказать обувь</a>
+            </li>
+        </ul>
+        <div class="contacts">
+            <span>Свяжитесь с нами:</span>
+            <a target="_blank" href="https://vk.com/choppermag ">VK</a>
+            <a target="_blank" href="https://www.instagram.com/choppermag_kzn/">INSTAGRAMM</a>
+            <a target="_blank" href="https://www.facebook.com/choppermag">FACEBOOK</a>
+        </div>
+    </div>
+    <a id="callback" class="trigger">заказать обратный звонок</a>
+</div>
     <p class="bg_text">CHOPP</p>
         <div class="container">
             <div class="col-6 col-push-6">
                 
                 <p class="title">Чтобы слиться с дорогой, <br> мотоциклу нужны колеса </p>
-                <h1>Чтобы слиться с мотоциклом, <span>байкеру нужна обувь</span></h1>
+                <h1>Чтобы слиться с мотоциклом, <br> <span>байкеру нужна обувь</span></h1>
                 <p class="text">Xelement, пора отправляться в путь</p>
                 <a href="#fifthPage" class="flex btn"><span>подобрать обувь</span></a>
                 <a href="#secondPage" class="btndwn">Next</a>
@@ -252,7 +334,7 @@
                     <li><span class="orange">3.</span>Убедитесь, что доставленная обувь - неотъемлемая <br> часть вашего байкерского образа.</li>
                     <li><span class="orange">4.</span>Отправляйтесь навстречу новым приключениям.</li>
                 </ul>
-                <a class="md-trigger" data-modal="modal_callback">оставить заявку </a>
+                <a class="md-trigger btn flex" data-modal="modal_callback">оставить заявку </a>
                 <a href="#eightPage" class="btndwn">Next</a>
             </div>
         </div>
@@ -344,7 +426,7 @@
          <div class="md-modal md-effect-1" id="modal_callback">
             <div class="md-content">
                 <span class="btn_close_modal">
-                    <a class="md-close"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 52 52" ><style>.a{fill:#424242;}</style><path d="M26 0C11.7 0 0 11.7 0 26s11.7 26 26 26 26-11.7 26-26S40.3 0 26 0zM26 50C12.8 50 2 39.2 2 26S12.8 2 26 2s24 10.8 24 24S39.2 50 26 50z" class="a"/><path d="M35.7 16.3c-0.4-0.4-1-0.4-1.4 0L26 24.6l-8.3-8.3c-0.4-0.4-1-0.4-1.4 0s-0.4 1 0 1.4L24.6 26l-8.3 8.3c-0.4 0.4-0.4 1 0 1.4C16.5 35.9 16.7 36 17 36s0.5-0.1 0.7-0.3L26 27.4l8.3 8.3C34.5 35.9 34.7 36 35 36s0.5-0.1 0.7-0.3c0.4-0.4 0.4-1 0-1.4L27.4 26l8.3-8.3C36.1 17.3 36.1 16.7 35.7 16.3z" class="a"/></svg></a>
+                    <a class="md-close"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 52 52" ><style>.a{fill:#424242;}</style><path d="M35.7 16.3c-0.4-0.4-1-0.4-1.4 0L26 24.6l-8.3-8.3c-0.4-0.4-1-0.4-1.4 0s-0.4 1 0 1.4L24.6 26l-8.3 8.3c-0.4 0.4-0.4 1 0 1.4C16.5 35.9 16.7 36 17 36s0.5-0.1 0.7-0.3L26 27.4l8.3 8.3C34.5 35.9 34.7 36 35 36s0.5-0.1 0.7-0.3c0.4-0.4 0.4-1 0-1.4L27.4 26l8.3-8.3C36.1 17.3 36.1 16.7 35.7 16.3z" class="a"/></svg></a>
                 </span>
                 <div class="titlebox">
                     <h2 class="colored">Записаться на курс</h2>
@@ -359,19 +441,17 @@
                         <!-- END Hidden Required Fields -->
 
                         <span class="field">
-                        <input type="text" class="form-control name" name="name" required=""  placeholder="Ваше имя " />
+                            <input type="text" class="form-control name" name="name" required=""  placeholder="Ваше имя " />
                         </span>
 
                          <span class="field">
                             <input type="email" class="form-control" name="email" required=""  placeholder="Ваша почта" />
-
                         </span>
 
                         <span class="field">
-                        <input placeholder="Ваш телефон" type="tel" class="form-control" name="custom_tel" required="">
+                            <input placeholder="Ваш телефон" type="tel" class="form-control" name="custom_tel" required="">
                         <!-- Если отправляем и на Гет РЕспонс тоже - меняем название поля name на то которое создали в компании ГетРЕспонса -->
                         </span>
-
 
                         <button type="submit" class="btn" name="send" ><span>Отправить</span></button>
 
@@ -385,13 +465,8 @@
                         <input type="hidden" name="campaign_token" value=""/>
                         <!-- GET RESPONCE INPUTS -->
                         <div class="clear"></div>
-
-
                     </form>
 
-                    <div class="md_bottom">
-                        <p class="tc t_small"><i class="fa fa-lock"></i>  *Ваши данные никогда не будут переданы 3-м лицам</p>
-                    </div>
                 </div>
             </div>
         </div>

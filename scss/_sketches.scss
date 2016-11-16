@@ -49,7 +49,7 @@ cursor: -webkit-grabbing !important;
 div[id*="modal_callback"]{
   max-width: 500px;
   h2{
-    font-size: 30px;
+    font-size: 29px;
     line-height: 36px;
     margin: 30px;
   }
@@ -63,13 +63,18 @@ div[id*="modal_callback"]{
     display: block;
   }
   .field{
-    width: 300px;
+    width: 360px;
     input{
       width: 100%;
     }
   }
   .field+.field {
    margin-top: 5px
+  }
+  .btn{
+    max-width: 360px;
+    width: 100%;
+    margin-top: 20px;
   }
   textarea{
     width: 100%;
@@ -91,6 +96,7 @@ div[id*="modal_politics"]{
   h2{padding-top: 20px;}
 }
 
+// .md-overlay{background: #fff;}
 
 .md_large {
     max-width: 100%;
@@ -205,16 +211,13 @@ div[id*="modal_politics"]{
 }
 
 .btn_close_modal{
-    display: inline-block;
-    width: 25px;
-    height: 25px;
-    line-height: 24px;
+  svg{width: 70px;}
+    display: block;
+    width: 70px;
+    height: 50px;
     text-align: center;
     font-size: 18px;
-    position: absolute;
-    right: 4px;
-    top: 0px;
-    margin: 10px;
+    margin: 0 auto 20px;
     cursor: pointer;
     -webkit-transition: -webkit-transform 1s;
     transition: -webkit-transform 1s;
@@ -224,7 +227,9 @@ div[id*="modal_politics"]{
                 transform-origin: 50% 50%;
                 a:hover{
                     color: #000;
-                    svg .a {fill: #DD1A1E; }
+                    svg {
+                      .a {fill: #DD1A1E; }
+                    }
                 }
 }
 
@@ -295,4 +300,36 @@ div[id*="modal_politics"]{
 }
 .slick-prev:hover:before{
   color: $orange
+}
+
+input::-webkit-input-placeholder{
+  color: $black;
+  letter-spacing: 0.1em;
+  font-family: $Helvetica_300;
+  font-size: 14px;
+  line-height: 56px;
+}
+
+input:-moz-placeholder{
+  color: $black;
+  letter-spacing: 0.1em;
+  font-family: $Helvetica_300;
+  font-size: 14px;
+  line-height: 56px;
+}
+
+input::-moz-placeholder{
+  color: $black;
+  letter-spacing: 0.1em;
+  font-family: $Helvetica_300;
+  font-size: 14px;
+  line-height: 56px;
+}
+
+input:-ms-input-placeholder{
+  color: $black;
+  letter-spacing: 0.1em;
+  font-family: $Helvetica_300;
+  font-size: 14px;
+  line-height: 56px;
 }

@@ -2,7 +2,11 @@
 @import "vars.scss";
 
 //Custom Styles Here
-
+input{
+  height: 57px;
+  border: 2px solid black;
+  padding: 0 20px;
+}
 
 #sec_02{
   background: url(../img/sec_02-bg.jpg) top right 0px no-repeat;
@@ -192,6 +196,7 @@
     }
     li+li{margin-top: 30px;}
   }
+  .btn{margin-top: 30px;}
   .btndwn{
     top: 200px;
     left: -170px;

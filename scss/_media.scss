@@ -72,6 +72,17 @@
 		}
 	}
 }
+@media only screen and (max-width : 1300px){
+	#sec_01{
+		background-position: left 50px top 0 !important;
+	}
+		#sec_09 .contacts, #footer, section{padding-left: 80px !important;}
+		#nav{
+			.inner{
+		  margin-left: 100px;
+		}
+	}
+}
 
 @media only screen and (max-width : 1200px) {
 	section, .fp-tableCell{height: auto !important;}
@@ -229,6 +240,16 @@
 			a{font-size: 12px;}
 		}
 	}
+	#nav{
+			.inner{
+		  margin-left: 30px;
+		}
+		.contacts{
+			span{
+				display: block;
+			}
+		}
+	}
 }
 
 @media only screen and (max-width : 720px) {
@@ -272,7 +293,29 @@
 	}
 }
 
-
+@media only screen and (max-width : 650px) {
+	#sec_09 .contacts, #footer, section{padding-left: 40px !important;}
+		#sec_01{
+		background-position: left 30px top 0 !important;
+	}
+	#nav{
+		width: 40px;
+		padding-left: 40px;
+		svg{
+			width: 40px;
+			margin-left: -42px;
+		}
+		.companie{
+			font-size: 24px;
+			margin-left: -33px;
+		}
+		.md-trigger{left: -113px;}
+	}
+	#nav.open{
+		width: 100%;
+		background-size: contain;
+	}
+}
 
 @media only screen and (max-width : 500px) {
 	body{
@@ -323,5 +366,27 @@
 	}
 	#sec_07{
 		padding: 49px 0 95px;
+	}
+}
+
+@media only screen and (max-height : 720px){
+	#nav{
+		li+li{
+			margin-top: 15px;
+		}
+	}
+}
+
+@media only screen and (max-height : 600px){
+	#nav{
+		li+li{
+			margin-top: 0px;
+		}
+		.md-trigger{
+			font-size: 12px;
+		}
+		.md-trigger:before{
+			display: none;
+		}
 	}
 }

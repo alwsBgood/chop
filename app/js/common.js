@@ -57,7 +57,7 @@ $(function() {
               $('form').trigger("reset");
               setTimeout(function(){  $("[name=send]").removeAttr("disabled"); }, 1000);
                     // Настройки модального окна после удачной отправки
-                     yaCounter40419295.reachGoal(goal);
+                     $('#modal_send').addClass('open');
                      $('div.md-show').removeClass('md-show');
                      $('form').trigger("reset");
                      $("#call_ok")[0].click();
@@ -167,6 +167,7 @@ $(window).scroll(function() {
 
   });
 
+// Sldier initialization
 
 $(document).ready(function() {
     $('.slider_goods').slick({
@@ -188,10 +189,73 @@ $(document).ready(function() {
     });
 });
 
+
+// Fullpage.js initialization
+
 $(document).ready(function() {
+  if(screen.width < 1200) { 
+  return;
+  } else {
     $('#fullpage').fullpage({
        anchors:['firstPage', 'secondPage', 'thirdPage', 'fourthPage', 'fifthPage', 'sixthPage', 'seventhPage', 'eightPage', 'ninthPage'],
-        responsiveWidth: 1200
+        responsiveWidth: 1200,
+        menu: '#nav'
+    });
+  };
+  $( window ).resize(function() {
+    if(screen.width < 1200) { 
+    return;
+    } else {
+      if($('#fullpage').hasClass('fullpage-wrapper')){
+      } else {
+        $('#fullpage').fullpage({
+           anchors:['firstPage', 'secondPage', 'thirdPage', 'fourthPage', 'fifthPage', 'sixthPage', 'seventhPage', 'eightPage', 'ninthPage'],
+            responsiveWidth: 1200,
+            menu: '#nav'
+        });
+      }
+    }
+  })
+})
+
+// Menu 
+
+$(document).ready(function() {
+    (function() {
+      var i, resize;
+
+      i = setInterval(function() {
+        return $("#nav .wrapper").toggleClass("cross");
+    }, 1500);
+
+      $("#nav .wrapper").click(function() {
+        clearInterval(i);
+        if($('#nav').hasClass('open')){
+            return $("#nav .wrapper").addClass("cross");
+        } else {
+            return $("#nav .wrapper").removeClass("cross");
+        }
+    });
+      $('#callback').click(function(){
+        clearInterval(i);
+        $("#nav .wrapper").addClass("cross");
+      });
+  }).call(this);
+
+    $('#menu').click(function(){
+      $('#modal_send').removeClass('open');
+        $('#nav').toggleClass('open');
+        if($('#modal_nav').hasClass('open')){
+          $('#modal_nav').removeClass('open');
+        }
     });
 
+    $('#callback').click(function(){
+        if($('#nav').hasClass('open')){
+            $('#modal_nav').addClass('open');
+        } else {
+            $('#nav').addClass('open');
+            $('#modal_nav').addClass('open');
+        };
+    })
 });
