@@ -2,10 +2,19 @@
 @import "vars.scss";
 
 //Custom Styles Here
+
 input{
   height: 57px;
   border: 2px solid black;
   padding: 0 20px;
+  font: 18px $Helvetica_400;
+}
+
+select{
+  height: 50px;
+  width: 200px;
+  border: 2px solid black;
+  padding: 0 10px;
 }
 
 #sec_02{
@@ -95,9 +104,8 @@ input{
   background: url(../img/sec_05-bg.png) top right 0px no-repeat;
   background-size: cover;
   position: relative;
-
+  .mobile{display:none;}
   h2{margin-bottom: 50px;}
-
   .sldier_goods--slide a{
     display:block;
     background: rgba(0,0,0,.5) url(../img/plus.png) top 50% center no-repeat;
@@ -313,6 +321,222 @@ input{
     svg{
       fill: $orange;
     }
+  }
+}
+
+[id*='modal_good_form']{
+.field{margin-top: 5px}
+select{display:inline-block;}
+.md-content{
+  overflow: visible !important;
+}
+}
+
+[class*='good_card']{
+  .fp-next{
+    border-color: transparent transparent transparent $orange;
+    right: 0px;
+  }
+  .fp-prev{
+   border-color: transparent $orange transparent transparent;
+   left: 0px;
+  }
+  display: flex;
+  overflow-y: scroll;
+  justify-content: center;
+  align-items: center;
+  position: absolute;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  width: 0;
+  overflow: hidden;
+  transition: all 0.8s;
+  z-index: 100;
+  background: #fff url(../img/modal-bg.png) top right no-repeat;
+  .card{
+    opacity: 0;
+    visibility: hidden;
+    transition: 0.2s;
+  }
+  .sizes_card{
+    display: block;
+    text-decoration: underline;
+    margin-bottom: 10px;
+  }
+  .slider-big{
+    img{
+      width: 420px;
+    }
+  }
+  .slider-small{
+    margin-top: 30px;
+    .slick-slide{
+      border: 1px solid #fff;
+      cursor: pointer;
+    }
+    .slick-center{
+      border: 1px solid $orange;
+    }
+  }
+  .slider_block{
+    float: left;
+    width: 530px;
+  }
+  .text_block{
+    float: right;
+    width: 530px;
+    .title{
+      text-transform: uppercase;
+      letter-spacing: 0.04em;
+    }
+    .text{
+      font: 16px/22px $Helvetica_300;
+      margin: 20px 0;
+    }
+    .price{
+      margin: 5px 0;
+      span{
+        display: inline-block;
+        margin-left: 20px;
+        color: #b6b6b6;
+        text-decoration: line-through;
+      }
+    }
+  }
+  .pagination{
+    font-family: $Akrobat_900;
+    [alt="arrow_separator"]{margin: 0 10px;}
+    margin-bottom: 40px;
+    .btn_close_modal_goods:hover{
+      cursor: pointer;
+      color: $orange;
+      transition: 0.3s;
+    }
+  }
+}
+.good_card-8{
+  .card{
+    padding-left: 60px;
+    padding-right: 60px;
+    img{
+      max-width: 400px;
+    }
+  }
+}
+
+[class*='good_card'].open{
+  width: 100%;
+}
+
+.card.visible{
+  opacity: 1;
+  visibility: visible;
+}
+
+div[id*="modal_sizes"]{
+  max-width: 580px !important;
+  min-width: 580px !important;
+  img{width: 100%;}
+  .md-content{
+    padding: 20px;
+  }
+  table{
+    width: 100%;
+    text-align: center;
+    .first-row{
+      font-size: 14px;
+      border-bottom: 2px solid $orange;
+      td{cursor: default;}
+      td:hover{background: none;color: $black;}
+    }
+    td{
+      border: 1px solid #eee;
+      padding: 1px 4px;
+      transition: 0.3s;
+      cursor: pointer;
+    }
+    td:hover, td.selected{
+      background: $orange;
+      color: #fff;
+    }
+  }
+}
+
+[id*='modal_goods'] {
+  min-width: 280px !important;
+  max-width: 900px !important;
+  width: 95%;
+  min-height: 100px;
+  max-height: 840px;
+  height: 90%;
+  .slider-sprays_mobile{
+    .price{text-align: left !important;}
+    img{
+      display: inline-block;
+      width: 100% !important;
+      max-width: 400px;
+    }
+  }
+}
+  [id*='modal_good'] .md-content {
+    text-align: left !important;
+    padding: 20px;
+    min-height: 280px;
+    max-height: 710px;
+    height: 100%;
+    overflow-y: scroll;
+    overflow-x: hidden; }
+  [id*='modal_good'] .md-trigger {
+    text-align: right;
+    display: block;
+    text-decoration: underline;
+    margin-bottom: 10px; }
+  [id*='modal_good'] .slider-big img {
+    width: 420px; }
+  [id*='modal_good'] .slider-small {
+    margin-top: 30px; }
+    [id*='modal_good'] .slider-small .slick-slide {
+      border: 1px solid #fff;
+      cursor: pointer; }
+    [id*='modal_good'] .slider-small .slick-center {
+      border: 1px solid #fa6b26; }
+  [id*='modal_good'] .slider_block {
+    float: left;
+    width: 420px; }
+  [id*='modal_good'] .text_block {
+    float: right;
+    width: 420px; }
+    [id*='modal_good'] .text_block .title {
+      text-transform: uppercase;
+      letter-spacing: 0.04em; }
+    [id*='modal_good'] .text_block .text {
+      font: 16px/22px "HelveticaNeueCyr-Light", sans-serif; }
+    [id*='modal_good'] .text_block .price {
+      text-align: right; }
+      [id*='modal_good'] .text_block .price span {
+        display: inline-block;
+        margin-left: 20px;
+        color: #b6b6b6;
+        text-decoration: line-through; }
+    [id*='modal_good'] .text_block form {
+      max-width: 300px;
+      width: 100%;
+      margin: 0 auto; }
+    [id*='modal_good'] .text_block .field {
+      max-width: 291px;
+      margin-top: 5px;
+      width: 100%; }
+      [id*='modal_good'] .text_block .field input {
+        width: 100%; }
+    [id*='modal_good'] .text_block .btn {
+      max-width: 291px;
+      margin-top: 10px; }
+
+
+[id*="modal_politics"]{
+  .md-content{
+    padding: 20px 0 0 20px;
   }
 }
 

@@ -46,7 +46,7 @@ cursor: -webkit-grabbing !important;
     width: 0;
 }
 
-div[id*="modal_callback"]{
+div[id*="modal_callback"], [id*='modal_good_form']{
   max-width: 500px;
   h2{
     font-size: 29px;
@@ -63,13 +63,17 @@ div[id*="modal_callback"]{
     display: block;
   }
   .field{
-    width: 360px;
+    max-width: 360px;
+    width: 100%;
     input{
       width: 100%;
     }
   }
   .field+.field {
    margin-top: 5px
+  }
+  form{
+    text-align: center;
   }
   .btn{
     max-width: 360px;
@@ -166,6 +170,12 @@ div[id*="modal_politics"]{
     line-height: 54px;
 }
 
+#modal_ok{
+  .md-content{
+    padding: 30px 20px;
+  }
+}
+
 
 .allert, .allert_tell {
     position: absolute;
@@ -190,6 +200,7 @@ div[id*="modal_politics"]{
     opacity: 0;
     padding : 5px;
     margin-left : 5px;
+    line-height: 14px;
     color:#000;
     font-style:italic;
     font-size: 13px;
@@ -206,7 +217,7 @@ div[id*="modal_politics"]{
     position : absolute;
     color : #4e4e4e;
     right:24px;
-    top:-7px;
+    top:-10px;
     opacity: 1;
 }
 

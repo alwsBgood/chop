@@ -25,7 +25,17 @@
 }
 
 @media (min-width: 1201px) and (max-width: 1499px){
-	// .btndwn{display: none;}
+	.good_card{
+		.slider_block{
+		  float: left;
+		  width: 430px;
+		}
+		.slider-big{
+		  img{
+		    width: 100%;
+		  }
+		}
+	}
 	#sec_01{
 		background-size: 110%;
 		background-position: left -50px top 0;
@@ -58,6 +68,7 @@
 		background-position: top right -150px;
 	}
 	#sec_08{
+		.btndwn{display:none;}
 		ul{
 			li{
 				font-size: 16px;
@@ -73,8 +84,10 @@
 	}
 }
 @media only screen and (max-width : 1300px){
+	.container{width: 100%;}
 	#sec_01{
 		background-position: left 50px top 0 !important;
+		h1{margin-right: 0;}
 	}
 		#sec_09 .contacts, #footer, section{padding-left: 80px !important;}
 		#nav{
@@ -82,9 +95,14 @@
 		  margin-left: 100px;
 		}
 	}
+	[class*="good_card"]{
+		padding-left: 80px;
+	}
 }
 
 @media only screen and (max-width : 1200px) {
+	
+		[class*="good_card"]{display: none;}
 	section, .fp-tableCell{height: auto !important;}
 	.btndwn{
 		position: static;
@@ -99,6 +117,7 @@
 		background-position: top 0 left -20px;
 		padding: 0 0 100px;
 		height: auto !important;
+		h1{margin-right: 0;}
 		p.title{margin-top: 300px;}
 		.bg_text{
 			display:none;
@@ -128,7 +147,7 @@
 		text-align: center;
 		background-size: 80%;
 		background-position: bottom left;
-		h2{margin: 0;}
+		h2{margin: 0 0 30px;}
 		.col-6{
 			width: 100%;
 			left: 0;
@@ -155,6 +174,8 @@
 	#sec_05{
 		background: none;
 		padding: 100px 0;
+		.mobile{display:block;}
+		.desctop{display: none;}
 		.item{
 			width: 95%;
 			height: auto;
@@ -202,6 +223,10 @@
 }
 
 @media only screen and (max-width : 992px) {
+	#nav.open{
+		width: 100%;
+		background-size: contain;
+	}
 	#sec_01{
 		p.title{margin-top: 280px;}
 	}
@@ -234,10 +259,26 @@
 			left: 0;
 		}
 	}
-	#footer{
-		.politics{
-			margin-left: -20px;
-			a{font-size: 12px;}
+	#sec_09{
+		padding-bottom: 0;
+		.contacts{
+			position: static;
+			padding-left: 0 !important;
+		}
+		#footer{
+			text-align: center !important;
+			position: static;
+			padding-left: 0 !important;
+			.tl{text-align: center;}
+			.politics{
+				text-align: center !important;
+				float: none;
+			}
+			.logo-gs{
+				float: none;
+				margin-top: 20px;
+				display: inline-block;
+			}
 		}
 	}
 	#nav{
@@ -248,6 +289,29 @@
 			span{
 				display: block;
 			}
+		}
+	}
+	[id*='modal_good']{
+		.slick-slide{
+			text-align: center;
+		}
+
+	  .slider_block{
+	    float: none;
+	    margin: 0 auto;
+	    max-width: 420px;
+	    width: 100%;
+	  }
+	  .text_block{
+	    float: none;;
+	    width: 100%;
+	    text-align: center;
+	    margin-top: 20px;
+	  }
+	}
+	#modal_goods{
+		.btn_close_modal{
+			margin: 0 0 20px !important;
 		}
 	}
 }
@@ -273,27 +337,11 @@
 	}
 	#sec_09{
 		padding-bottom: 0px;
-		.contacts{
-			position: static;
-		}
-			#footer{
-				text-align: center !important;
-				position: static;
-				.tl{text-align: center;}
-			.politics{
-				text-align: center !important;
-				float: none;
-			}
-			.logo-gs{
-				float: none;
-				margin-top: 20px;
-				display: inline-block;
-			}
-		}
 	}
 }
 
 @media only screen and (max-width : 650px) {
+		.sizes_card{display:none !important;}
 	#sec_09 .contacts, #footer, section{padding-left: 40px !important;}
 		#sec_01{
 		background-position: left 30px top 0 !important;
@@ -301,7 +349,7 @@
 	#nav{
 		width: 40px;
 		padding-left: 40px;
-		svg{
+		.svg{
 			width: 40px;
 			margin-left: -42px;
 		}
@@ -309,11 +357,7 @@
 			font-size: 24px;
 			margin-left: -33px;
 		}
-		.md-trigger{left: -113px;}
-	}
-	#nav.open{
-		width: 100%;
-		background-size: contain;
+		.trigger{left: -113px;}
 	}
 }
 
@@ -367,9 +411,45 @@
 	#sec_07{
 		padding: 49px 0 95px;
 	}
+	[id*='modal_goods']{
+	  .slider-big{
+	    img{
+	      max-width: 420px;
+	      width: 100%;
+	    }
+	  }
+	  .slider-small{
+	    display: none;
+	  }
+	  .slider_block{
+	    float: none;
+	    margin: 0 auto;
+	    max-width: 420px;
+	    width: 100%;
+	  }
+	  .text_block{
+	    float: none;;
+	    width: 100%;
+	    text-align: center;
+	    margin-top: 20px;
+	  }
+	}
+}
+@media only screen and (max-width : 380px) {
+	#modal_goods{
+		.btn_close_modal{
+			margin: -10px auto 50px !important;
+		}
+	}
 }
 
 @media only screen and (max-height : 720px){
+	.sizes_card{display:none !important;}
+	[class*='good_card']{
+		.slider_block{
+			width: 350px;
+		}
+	}
 	#nav{
 		li+li{
 			margin-top: 15px;
@@ -382,11 +462,12 @@
 		li+li{
 			margin-top: 0px;
 		}
-		.md-trigger{
+		.trigger{
 			font-size: 12px;
 		}
-		.md-trigger:before{
+		.trigger:before{
 			display: none;
 		}
+		.contacts{display:none;}
 	}
 }

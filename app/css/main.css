@@ -5,7 +5,14 @@
 input {
   height: 57px;
   border: 2px solid black;
-  padding: 0 20px; }
+  padding: 0 20px;
+  font: 18px "HelveticaNeueCyr-Roman", sans-serif; }
+
+select {
+  height: 50px;
+  width: 200px;
+  border: 2px solid black;
+  padding: 0 10px; }
 
 #sec_02 {
   background: url(../img/sec_02-bg.jpg) top right 0px no-repeat;
@@ -81,6 +88,8 @@ input {
   background: url(../img/sec_05-bg.png) top right 0px no-repeat;
   background-size: cover;
   position: relative; }
+  #sec_05 .mobile {
+    display: none; }
   #sec_05 h2 {
     margin-bottom: 50px; }
   #sec_05 .sldier_goods--slide a {
@@ -260,6 +269,220 @@ input {
     #footer a:hover svg {
       fill: #fa6b26; }
 
+[id*='modal_good_form'] .field {
+  margin-top: 5px; }
+
+[id*='modal_good_form'] select {
+  display: inline-block; }
+
+[id*='modal_good_form'] .md-content {
+  overflow: visible !important; }
+
+[class*='good_card'] {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  overflow-y: scroll;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+  -ms-flex-align: center;
+  align-items: center;
+  position: absolute;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  width: 0;
+  overflow: hidden;
+  -webkit-transition: all 0.8s;
+  transition: all 0.8s;
+  z-index: 100;
+  background: #fff url(../img/modal-bg.png) top right no-repeat; }
+  [class*='good_card'] .fp-next {
+    border-color: transparent transparent transparent #fa6b26;
+    right: 0px; }
+  [class*='good_card'] .fp-prev {
+    border-color: transparent #fa6b26 transparent transparent;
+    left: 0px; }
+  [class*='good_card'] .card {
+    opacity: 0;
+    visibility: hidden;
+    -webkit-transition: 0.2s;
+    transition: 0.2s; }
+  [class*='good_card'] .sizes_card {
+    display: block;
+    text-decoration: underline;
+    margin-bottom: 10px; }
+  [class*='good_card'] .slider-big img {
+    width: 420px; }
+  [class*='good_card'] .slider-small {
+    margin-top: 30px; }
+    [class*='good_card'] .slider-small .slick-slide {
+      border: 1px solid #fff;
+      cursor: pointer; }
+    [class*='good_card'] .slider-small .slick-center {
+      border: 1px solid #fa6b26; }
+  [class*='good_card'] .slider_block {
+    float: left;
+    width: 530px; }
+  [class*='good_card'] .text_block {
+    float: right;
+    width: 530px; }
+    [class*='good_card'] .text_block .title {
+      text-transform: uppercase;
+      letter-spacing: 0.04em; }
+    [class*='good_card'] .text_block .text {
+      font: 16px/22px "HelveticaNeueCyr-Light", sans-serif;
+      margin: 20px 0; }
+    [class*='good_card'] .text_block .price {
+      margin: 5px 0; }
+      [class*='good_card'] .text_block .price span {
+        display: inline-block;
+        margin-left: 20px;
+        color: #b6b6b6;
+        text-decoration: line-through; }
+  [class*='good_card'] .pagination {
+    font-family: "Akrobat-Black", sans-serif;
+    margin-bottom: 40px; }
+    [class*='good_card'] .pagination [alt="arrow_separator"] {
+      margin: 0 10px; }
+    [class*='good_card'] .pagination .btn_close_modal_goods:hover {
+      cursor: pointer;
+      color: #fa6b26;
+      -webkit-transition: 0.3s;
+      transition: 0.3s; }
+
+.good_card-8 .card {
+  padding-left: 60px;
+  padding-right: 60px; }
+  .good_card-8 .card img {
+    max-width: 400px; }
+
+[class*='good_card'].open {
+  width: 100%; }
+
+.card.visible {
+  opacity: 1;
+  visibility: visible; }
+
+div[id*="modal_sizes"] {
+  max-width: 580px !important;
+  min-width: 580px !important; }
+  div[id*="modal_sizes"] img {
+    width: 100%; }
+  div[id*="modal_sizes"] .md-content {
+    padding: 20px; }
+  div[id*="modal_sizes"] table {
+    width: 100%;
+    text-align: center; }
+    div[id*="modal_sizes"] table .first-row {
+      font-size: 14px;
+      border-bottom: 2px solid #fa6b26; }
+      div[id*="modal_sizes"] table .first-row td {
+        cursor: default; }
+      div[id*="modal_sizes"] table .first-row td:hover {
+        background: none;
+        color: #14171c; }
+    div[id*="modal_sizes"] table td {
+      border: 1px solid #eee;
+      padding: 1px 4px;
+      -webkit-transition: 0.3s;
+      transition: 0.3s;
+      cursor: pointer; }
+    div[id*="modal_sizes"] table td:hover, div[id*="modal_sizes"] table td.selected {
+      background: #fa6b26;
+      color: #fff; }
+
+[id*='modal_goods'] {
+  min-width: 280px !important;
+  max-width: 900px !important;
+  width: 95%;
+  min-height: 100px;
+  max-height: 840px;
+  height: 90%; }
+  [id*='modal_goods'] .slider-sprays_mobile .price {
+    text-align: left !important; }
+  [id*='modal_goods'] .slider-sprays_mobile img {
+    display: inline-block;
+    width: 100% !important;
+    max-width: 400px; }
+
+[id*='modal_good'] .md-content {
+  text-align: left !important;
+  padding: 20px;
+  min-height: 280px;
+  max-height: 710px;
+  height: 100%;
+  overflow-y: scroll;
+  overflow-x: hidden; }
+
+[id*='modal_good'] .md-trigger {
+  text-align: right;
+  display: block;
+  text-decoration: underline;
+  margin-bottom: 10px; }
+
+[id*='modal_good'] .slider-big img {
+  width: 420px; }
+
+[id*='modal_good'] .slider-small {
+  margin-top: 30px; }
+
+[id*='modal_good'] .slider-small .slick-slide {
+  border: 1px solid #fff;
+  cursor: pointer; }
+
+[id*='modal_good'] .slider-small .slick-center {
+  border: 1px solid #fa6b26; }
+
+[id*='modal_good'] .slider_block {
+  float: left;
+  width: 420px; }
+
+[id*='modal_good'] .text_block {
+  float: right;
+  width: 420px; }
+
+[id*='modal_good'] .text_block .title {
+  text-transform: uppercase;
+  letter-spacing: 0.04em; }
+
+[id*='modal_good'] .text_block .text {
+  font: 16px/22px "HelveticaNeueCyr-Light", sans-serif; }
+
+[id*='modal_good'] .text_block .price {
+  text-align: right; }
+
+[id*='modal_good'] .text_block .price span {
+  display: inline-block;
+  margin-left: 20px;
+  color: #b6b6b6;
+  text-decoration: line-through; }
+
+[id*='modal_good'] .text_block form {
+  max-width: 300px;
+  width: 100%;
+  margin: 0 auto; }
+
+[id*='modal_good'] .text_block .field {
+  max-width: 291px;
+  margin-top: 5px;
+  width: 100%; }
+
+[id*='modal_good'] .text_block .field input {
+  width: 100%; }
+
+[id*='modal_good'] .text_block .btn {
+  max-width: 291px;
+  margin-top: 10px; }
+
+[id*="modal_politics"] .md-content {
+  padding: 20px 0 0 20px; }
+
 /* ================================*/
 /* CURSOR STYLES*/
 .touch_mode_grab {
@@ -299,30 +522,33 @@ input {
   height: 0;
   width: 0; }
 
-div[id*="modal_callback"] {
+div[id*="modal_callback"], [id*='modal_good_form'] {
   max-width: 500px; }
-  div[id*="modal_callback"] h2 {
+  div[id*="modal_callback"] h2, [id*='modal_good_form'] h2 {
     font-size: 29px;
     line-height: 36px;
     margin: 30px; }
-  div[id*="modal_callback"] .md-content {
+  div[id*="modal_callback"] .md-content, [id*='modal_good_form'] .md-content {
     padding: 20px;
     background: #fff;
     background-size: cover;
     text-align: center; }
-  div[id*="modal_callback"] .form-wrap {
+  div[id*="modal_callback"] .form-wrap, [id*='modal_good_form'] .form-wrap {
     display: block; }
-  div[id*="modal_callback"] .field {
-    width: 360px; }
-    div[id*="modal_callback"] .field input {
+  div[id*="modal_callback"] .field, [id*='modal_good_form'] .field {
+    max-width: 360px;
+    width: 100%; }
+    div[id*="modal_callback"] .field input, [id*='modal_good_form'] .field input {
       width: 100%; }
-  div[id*="modal_callback"] .field + .field {
+  div[id*="modal_callback"] .field + .field, [id*='modal_good_form'] .field + .field {
     margin-top: 5px; }
-  div[id*="modal_callback"] .btn {
+  div[id*="modal_callback"] form, [id*='modal_good_form'] form {
+    text-align: center; }
+  div[id*="modal_callback"] .btn, [id*='modal_good_form'] .btn {
     max-width: 360px;
     width: 100%;
     margin-top: 20px; }
-  div[id*="modal_callback"] textarea {
+  div[id*="modal_callback"] textarea, [id*='modal_good_form'] textarea {
     width: 100%;
     height: 100px;
     resize: none;
@@ -404,6 +630,9 @@ div[id*="modal_politics"] {
   font-size: 18px;
   line-height: 54px; }
 
+#modal_ok .md-content {
+  padding: 30px 20px; }
+
 .allert, .allert_tell {
   position: absolute;
   z-index: 20;
@@ -424,6 +653,7 @@ div[id*="modal_politics"] {
   opacity: 0;
   padding: 5px;
   margin-left: 5px;
+  line-height: 14px;
   color: #000;
   font-style: italic;
   font-size: 13px;
@@ -441,7 +671,7 @@ div[id*="modal_politics"] {
   position: absolute;
   color: #4e4e4e;
   right: 24px;
-  top: -7px;
+  top: -10px;
   opacity: 1; }
 
 .btn_close_modal {
@@ -575,6 +805,11 @@ input:-ms-input-placeholder {
     background-position: top right -150px; } }
 
 @media (min-width: 1201px) and (max-width: 1499px) {
+  .good_card .slider_block {
+    float: left;
+    width: 430px; }
+  .good_card .slider-big img {
+    width: 100%; }
   #sec_01 {
     background-size: 110%;
     background-position: left -50px top 0; }
@@ -598,6 +833,8 @@ input:-ms-input-placeholder {
     background-position: top right -300px; }
   #sec_06, #sec_08 {
     background-position: top right -150px; }
+  #sec_08 .btndwn {
+    display: none; }
   #sec_08 ul li {
     font-size: 16px; }
   #sec_08 ul li + li {
@@ -608,14 +845,22 @@ input:-ms-input-placeholder {
       margin-top: 0px; } }
 
 @media only screen and (max-width: 1300px) {
+  .container {
+    width: 100%; }
   #sec_01 {
     background-position: left 50px top 0 !important; }
+    #sec_01 h1 {
+      margin-right: 0; }
   #sec_09 .contacts, #footer, section {
     padding-left: 80px !important; }
   #nav .inner {
-    margin-left: 100px; } }
+    margin-left: 100px; }
+  [class*="good_card"] {
+    padding-left: 80px; } }
 
 @media only screen and (max-width: 1200px) {
+  [class*="good_card"] {
+    display: none; }
   section, .fp-tableCell {
     height: auto !important; }
   .btndwn {
@@ -630,6 +875,8 @@ input:-ms-input-placeholder {
     background-position: top 0 left -20px;
     padding: 0 0 100px;
     height: auto !important; }
+    #sec_01 h1 {
+      margin-right: 0; }
     #sec_01 p.title {
       margin-top: 300px; }
     #sec_01 .bg_text {
@@ -656,7 +903,7 @@ input:-ms-input-placeholder {
     background-size: 80%;
     background-position: bottom left; }
     #sec_03 h2 {
-      margin: 0; }
+      margin: 0 0 30px; }
     #sec_03 .col-6 {
       width: 100%;
       left: 0;
@@ -678,6 +925,10 @@ input:-ms-input-placeholder {
   #sec_05 {
     background: none;
     padding: 100px 0; }
+    #sec_05 .mobile {
+      display: block; }
+    #sec_05 .desctop {
+      display: none; }
     #sec_05 .item {
       width: 95%;
       height: auto; }
@@ -714,6 +965,9 @@ input:-ms-input-placeholder {
       left: 0; } }
 
 @media only screen and (max-width: 992px) {
+  #nav.open {
+    width: 100%;
+    background-size: contain; }
   #sec_01 p.title {
     margin-top: 280px; }
   #sec_02 {
@@ -737,14 +991,42 @@ input:-ms-input-placeholder {
     #sec_06 .col-6 {
       width: 100%;
       left: 0; }
-  #footer .politics {
-    margin-left: -20px; }
-    #footer .politics a {
-      font-size: 12px; }
+  #sec_09 {
+    padding-bottom: 0; }
+    #sec_09 .contacts {
+      position: static;
+      padding-left: 0 !important; }
+    #sec_09 #footer {
+      text-align: center !important;
+      position: static;
+      padding-left: 0 !important; }
+      #sec_09 #footer .tl {
+        text-align: center; }
+      #sec_09 #footer .politics {
+        text-align: center !important;
+        float: none; }
+      #sec_09 #footer .logo-gs {
+        float: none;
+        margin-top: 20px;
+        display: inline-block; }
   #nav .inner {
     margin-left: 30px; }
   #nav .contacts span {
-    display: block; } }
+    display: block; }
+  [id*='modal_good'] .slick-slide {
+    text-align: center; }
+  [id*='modal_good'] .slider_block {
+    float: none;
+    margin: 0 auto;
+    max-width: 420px;
+    width: 100%; }
+  [id*='modal_good'] .text_block {
+    float: none;
+    width: 100%;
+    text-align: center;
+    margin-top: 20px; }
+  #modal_goods .btn_close_modal {
+    margin: 0 0 20px !important; } }
 
 @media only screen and (max-width: 720px) {
   #sec_01 p.title {
@@ -760,23 +1042,11 @@ input:-ms-input-placeholder {
   #sec_07 {
     padding: 49px 0 160px; }
   #sec_09 {
-    padding-bottom: 0px; }
-    #sec_09 .contacts {
-      position: static; }
-    #sec_09 #footer {
-      text-align: center !important;
-      position: static; }
-      #sec_09 #footer .tl {
-        text-align: center; }
-      #sec_09 #footer .politics {
-        text-align: center !important;
-        float: none; }
-      #sec_09 #footer .logo-gs {
-        float: none;
-        margin-top: 20px;
-        display: inline-block; } }
+    padding-bottom: 0px; } }
 
 @media only screen and (max-width: 650px) {
+  .sizes_card {
+    display: none !important; }
   #sec_09 .contacts, #footer, section {
     padding-left: 40px !important; }
   #sec_01 {
@@ -784,17 +1054,14 @@ input:-ms-input-placeholder {
   #nav {
     width: 40px;
     padding-left: 40px; }
-    #nav svg {
+    #nav .svg {
       width: 40px;
       margin-left: -42px; }
     #nav .companie {
       font-size: 24px;
       margin-left: -33px; }
-    #nav .md-trigger {
-      left: -113px; }
-  #nav.open {
-    width: 100%;
-    background-size: contain; } }
+    #nav .trigger {
+      left: -113px; } }
 
 @media only screen and (max-width: 500px) {
   body {
@@ -832,16 +1099,41 @@ input:-ms-input-placeholder {
   #sec_06 {
     padding-bottom: 75px; }
   #sec_07 {
-    padding: 49px 0 95px; } }
+    padding: 49px 0 95px; }
+  [id*='modal_goods'] .slider-big img {
+    max-width: 420px;
+    width: 100%; }
+  [id*='modal_goods'] .slider-small {
+    display: none; }
+  [id*='modal_goods'] .slider_block {
+    float: none;
+    margin: 0 auto;
+    max-width: 420px;
+    width: 100%; }
+  [id*='modal_goods'] .text_block {
+    float: none;
+    width: 100%;
+    text-align: center;
+    margin-top: 20px; } }
+
+@media only screen and (max-width: 380px) {
+  #modal_goods .btn_close_modal {
+    margin: -10px auto 50px !important; } }
 
 @media only screen and (max-height: 720px) {
+  .sizes_card {
+    display: none !important; }
+  [class*='good_card'] .slider_block {
+    width: 350px; }
   #nav li + li {
     margin-top: 15px; } }
 
 @media only screen and (max-height: 600px) {
   #nav li + li {
     margin-top: 0px; }
-  #nav .md-trigger {
+  #nav .trigger {
     font-size: 12px; }
-  #nav .md-trigger:before {
+  #nav .trigger:before {
+    display: none; }
+  #nav .contacts {
     display: none; } }
