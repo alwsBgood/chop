@@ -125,6 +125,7 @@ select{
   .item{
     border: 2px solid #eee;
     position: relative;
+    background: #fff;
     width: 360px;
     height: 430px;
     top: 0;
@@ -152,7 +153,7 @@ select{
     content : 'Next';
     position: absolute;
     top: -1px;
-    left: -26px;
+    left: -27px;
     transition: color 0.4s;
 
     font-family: $Akrobat_700;
@@ -161,7 +162,7 @@ select{
     content : 'Previous';
     position: absolute;
     top: -1px;
-    right: -43px;
+    right: -47px;
     transition: color 0.4s;
 
     font-family: $Akrobat_700;

@@ -157,9 +157,9 @@ $( document ).ready(function() {
 
 //  INPUT TEL MASK
 
-// jQuery(function($){
-//  $("input[type='tel']").mask("+9 (999) 999-9999");
-// });
+jQuery(function($){
+ $("input[type='tel']").mask("+9 (999) 999-9999");
+});
 
 
 
@@ -183,11 +183,17 @@ $(document).ready(function() {
         slidesToScroll: 1,
         autoplay: false,
         responsive: [{
-                breakpoint: 600,
+                breakpoint: 700,
                 settings: {
                     slidesToShow: 2
                 }
-            }
+            },
+            {
+              breakpoint: 400,
+              settings: {
+                  slidesToShow: 1
+              }
+          }
             // You can unslick at a given breakpoint now by adding:
             // settings: "unslick"
             // instead of a settings object
@@ -309,6 +315,11 @@ $(document).ready(function() {
         }
     });
 
+    $('#nav li a').click(function(){
+      $('#nav').removeClass('open');
+      $("#nav .wrapper").removeClass("cross");
+    })
+
     $('.callback').click(function(){
         if($('#nav').hasClass('open')){
             $('#modal_nav').addClass('open');
@@ -366,9 +377,6 @@ jQuery(document).ready(function($) {
 
 //  Sizes changes
 
-// $('#modal_sizes tr').click(function() {
-//   $('option').eq($(this).index()).prop('selected',true);
-// });
 
 $('#modal_sizes tr').click(function() {
   $('select > option').removeAttr('selected');

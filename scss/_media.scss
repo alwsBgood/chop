@@ -220,6 +220,10 @@
 			left: 0;
 		}
 	}
+	#nav{
+		.desctop{display:none;}
+		.mobile{display:block;}
+	}
 }
 
 @media only screen and (max-width : 992px) {
@@ -358,6 +362,18 @@
 			margin-left: -33px;
 		}
 		.trigger{left: -113px;}
+		#modal_nav{
+			margin-left: 40px;
+			form{
+				margin-left: 5px;
+				margin-right: 45px
+			}
+		}
+		#modal_send{
+			margin-left: 40px;
+			padding: 0 5px 0 45px;
+		}
+		li+li{margin-top: 15px;}
 	}
 }
 

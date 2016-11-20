@@ -221,7 +221,8 @@ h2 {
   -ms-flex-align: center;
   align-items: center; }
   #modal_nav form {
-    width: 360px;
+    max-width: 360px;
+    width: 100%;
     margin-left: -90px;
     opacity: 0; }
   #modal_nav .field {
@@ -264,6 +265,8 @@ h2 {
   background: #0b0b0b;
   -webkit-transition: all 1s;
   transition: all 1s; }
+  #nav .mobile {
+    display: none; }
   #nav #menu {
     z-index: 102; }
   #nav a:hover {
