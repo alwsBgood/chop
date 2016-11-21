@@ -7,7 +7,7 @@ input{
   height: 57px;
   border: 2px solid black;
   padding: 0 20px;
-  font: 18px $Helvetica_400;
+  font: 18px/50px $Helvetica_400;
 }
 
 select{
@@ -48,6 +48,7 @@ select{
   position: relative;
 
   .col-6{margin-left: -30px;}
+  .mobile{display:none;}
   h2{
     margin:100px 0 50px;
   }
@@ -105,7 +106,10 @@ select{
   background-size: cover;
   position: relative;
   .mobile{display:none;}
-  h2{margin-bottom: 50px;}
+  h2{
+    margin-bottom: 50px;
+    margin-top: 50px;
+  }
   .sldier_goods--slide a{
     display:block;
     background: rgba(0,0,0,.5) url(../img/plus.png) top 50% center no-repeat;
@@ -128,6 +132,7 @@ select{
     background: #fff;
     width: 360px;
     height: 430px;
+    min-height: 100%;
     top: 0;
     left: 0;
     padding: 40px;
@@ -210,6 +215,7 @@ select{
     top: 200px;
     left: -170px;
   }
+  .mobile{display:none;}
 }
 
 #sec_08{
@@ -333,6 +339,21 @@ select{display:inline-block;}
 }
 }
 
+.present_spray{
+  font: 15px/22px $Helvetica_300;
+  color: $orange;
+  margin-top: 30px;
+  margin-bottom: 20px;
+  span{
+    font-family: $Helvetica_700;
+  }
+  img{
+    float: left;
+    margin-top: -7px;
+    margin-right: 15px;
+  }
+}
+
 [class*='good_card']{
   .fp-next{
     border-color: transparent transparent transparent $orange;
@@ -403,6 +424,9 @@ select{display:inline-block;}
         color: #b6b6b6;
         text-decoration: line-through;
       }
+    }
+    .btn{
+      margin: 30px 0 30px !important;
     }
   }
   .pagination{

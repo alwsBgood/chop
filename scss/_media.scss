@@ -50,7 +50,15 @@
 	}
 	#sec_02{
 		background-position: top 0 right -300px;
-		h2{margin-top: -170px;}
+		h2{
+			margin-top: -70px;
+			margin-bottom: 30px;
+		}
+		ul{
+			li+li{
+				margin-top: 14px;
+			}
+		}
 	}
 	#sec_03{
 		background-position: top -100px right 0px;
@@ -101,8 +109,10 @@
 }
 
 @media only screen and (max-width : 1200px) {
-	
-		[class*="good_card"]{display: none;}
+	.present_spray{
+	  img{display: none;}
+	}
+	[class*="good_card"]{display: none;}
 	section, .fp-tableCell{height: auto !important;}
 	.btndwn{
 		position: static;
@@ -129,6 +139,8 @@
 		.btn{
 			margin: 30px auto 0px;
 		}
+		.mobile{display: flex;}
+		.desctop{display:none;}
 	}
 	#sec_02{
 		padding: 0 0 300px;
@@ -148,6 +160,8 @@
 		background-size: 80%;
 		background-position: bottom left;
 		h2{margin: 0 0 30px;}
+		.mobile{display:flex;}
+		.desctop{display: none;}
 		.col-6{
 			width: 100%;
 			left: 0;
@@ -174,11 +188,13 @@
 	#sec_05{
 		background: none;
 		padding: 100px 0;
+
 		.mobile{display:block;}
 		.desctop{display: none;}
 		.item{
 			width: 95%;
-			height: auto;
+			height: 360px;
+			padding: 20px;
 			img{
 				width: 100%;
 			}
@@ -202,6 +218,8 @@
 		.btn{
 			margin: 30px auto 0px;
 		}
+		.mobile{display: flex;}
+		.desctop{display:none;}
 	}
 	#sec_08{
 		display: none;
@@ -251,6 +269,10 @@
 			p{
 				font-size: 11px;
 			}
+		}
+		.slick-prev{
+			left: 0px !important;
+			right: auto;
 		}
 	}
 	#sec_06{
@@ -311,6 +333,10 @@
 	    width: 100%;
 	    text-align: center;
 	    margin-top: 20px;
+	    .price{
+	    	text-align: center;
+	    }
+	    .md-trigger{text-align: center;}
 	  }
 	}
 	#modal_goods{
@@ -319,6 +345,7 @@
 		}
 	}
 }
+
 
 @media only screen and (max-width : 720px) {
 	#sec_01{
@@ -383,8 +410,8 @@
 		line-height: 22px;
 	}
 	h2{
-		font-size: 26px;
-		line-height: 30px;
+		font-size: 22px;
+		line-height: 28px;
 	}
 	h1{
 		font-size: 30px;
@@ -451,6 +478,15 @@
 	  }
 	}
 }
+
+@media only screen and (max-width : 400px) {
+	#sec_05{
+		.item{
+			height: auto;
+		}
+	}
+}
+
 @media only screen and (max-width : 380px) {
 	#modal_goods{
 		.btn_close_modal{
@@ -458,20 +494,25 @@
 		}
 	}
 }
-
-@media only screen and (max-height : 720px){
-	.sizes_card{display:none !important;}
+@media only screen and (max-height : 830px){
 	[class*='good_card']{
 		.slider_block{
 			width: 350px;
 		}
 	}
+}
+
+
+@media only screen and (max-height : 720px){
 	#nav{
 		li+li{
 			margin-top: 15px;
 		}
 	}
 }
+@media only screen and (max-height : 670px){
+	.sizes_card{display:none !important;}
+	}
 
 @media only screen and (max-height : 600px){
 	#nav{

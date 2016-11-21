@@ -191,7 +191,8 @@ $(document).ready(function() {
             {
               breakpoint: 400,
               settings: {
-                  slidesToShow: 1
+                  slidesToShow: 1,
+                  adaptiveHeight: true
               }
           }
             // You can unslick at a given breakpoint now by adding:
@@ -334,7 +335,7 @@ $(document).ready(function() {
 // CUSTOM MODALS
 
 jQuery(document).ready(function($) {
-  $('[class*="modal_good_trigger"').click(function() {
+  $('[class*="modal_good_trigger"]').click(function() {
     setTimeout(function(){
       $('.card').addClass('visible');
     }, 400);
@@ -387,6 +388,3 @@ $('#modal_sizes td').click(function() {
   $('#modal_sizes td').removeClass('selected');
   $(this).addClass('selected');
 });
-
-
-
