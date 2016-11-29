@@ -2,12 +2,15 @@
 @import "vars.scss";
 
 //Custom Styles Here
+section{
+  border-bottom: 3px solid #000;
+}
 
 input{
   height: 57px;
   border: 2px solid black;
   padding: 0 20px;
-  font: 18px $Helvetica_400;
+  font: 18px/50px $Helvetica_400;
 }
 
 select{
@@ -23,7 +26,7 @@ select{
   position: relative;
 
   h2{
-    margin: 0 0px 50px 0;
+    margin: -100px 0px 50px 0;
   }
   ul{
     li{
@@ -297,6 +300,7 @@ select{
   background-color: #252525;
   .politics{
     float: left;
+    margin-left: -15px;
     line-height: 29px;
     a+a{
       margin-left: 10px;
@@ -325,12 +329,32 @@ select{
   }
 }
 
-[id*='modal_good_form']{
-.field{margin-top: 5px}
-select{display:inline-block;}
-.md-content{
-  overflow: visible !important;
+.mobile{
+  display: none !important;
 }
+
+.present_spray{
+  font: 15px/22px $Helvetica_300;
+  color: $orange;
+  margin-top: 30px;
+  margin-bottom: 20px;
+  span{
+    font-family: $Helvetica_700;
+  }
+  img{
+    float: left;
+    margin-top: -7px;
+    margin-right: 15px;
+  }
+}
+
+[id*='modal_good_form']{
+  .field{margin-top: 5px}
+  select{display:inline-block;}
+  .md-content{
+    overflow: visible !important;
+    background: none !important;
+  }
 }
 
 [class*='good_card']{
@@ -546,5 +570,5 @@ div[id*="modal_sizes"]{
 @import "media.scss";
 @import "../libs/niftymodal/component.css";
 @import "../libs/slick/slick.min.css";
-@import "../libs/fullPage/jquery.fullpage.min.css";
+@import "../libs/fullpage/jquery.fullpage.min.css";
 @import "../fonts/font-awesome/font-awesome.min.css"

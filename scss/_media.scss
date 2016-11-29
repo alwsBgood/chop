@@ -60,6 +60,9 @@
 		.col-6{
 			margin-left: -30px;
 		}
+		.btndwn{
+			left: -500px;
+		}
 	}
 	#sec_04{
 		background-position: top right -300px;
@@ -68,7 +71,7 @@
 		background-position: top right -150px;
 	}
 	#sec_08{
-		.btndwn{display:none;}
+		.btndwn{display:none !important;}
 		ul{
 			li{
 				font-size: 16px;
@@ -95,15 +98,27 @@
 		  margin-left: 100px;
 		}
 	}
+	#sec_08{
+			background-position: top right -250px;
+		}
 	[class*="good_card"]{
 		padding-left: 80px;
 	}
 }
 
 @media only screen and (max-width : 1200px) {
-	
+	.desctop{display: none !important}
+	.mobile.btn{display: flex !important}
+	.mobile.btndwn{display: block !important;}
+	.present_spray{
+		  img{display: none;}
+		  br{display: none;}
+		}
 		[class*="good_card"]{display: none;}
-	section, .fp-tableCell{height: auto !important;}
+	section, .fp-tableCell{
+		height: auto !important;
+		border-bottom: none;
+	}
 	.btndwn{
 		position: static;
 		display: block;
@@ -133,7 +148,7 @@
 	#sec_02{
 		padding: 0 0 300px;
 		height: auto !important;
-		.btndwn{display:none;}
+		.btndwn{display:none !important;}
 		background-size: 80%;
 		background-position: bottom right;
 		text-align: center;
@@ -143,6 +158,8 @@
 		}
 	}
 	#sec_03{
+		.mobile{display:flex !important;}
+				.desctop{display: none;}
 		padding: 60px 0 500px;
 		text-align: center;
 		background-size: 80%;
@@ -172,10 +189,11 @@
 		}
 	}
 	#sec_05{
+
 		background: none;
 		padding: 100px 0;
-		.mobile{display:block;}
-		.desctop{display: none;}
+		.row.mobile{display:block !important;}
+		.row.desctop{display: none;}
 		.item{
 			width: 95%;
 			height: auto;
@@ -202,6 +220,8 @@
 		.btn{
 			margin: 30px auto 0px;
 		}
+		.mobile{display:flex ;}
+		.desctop{display: none;}
 	}
 	#sec_08{
 		display: none;
@@ -214,15 +234,18 @@
 		.btn{
 			margin: 30px auto 40px;
 		}
-		.btndwn{display: none;}
+		.btndwn{display: none !important;}
 		.col-6{
 			width: 100%;
 			left: 0;
 		}
+		.contacts{
+			padding-right: 10px;
+		}
 	}
 	#nav{
 		.desctop{display:none;}
-		.mobile{display:block;}
+		.mobile{display:block !important;}
 	}
 }
 
@@ -346,7 +369,14 @@
 
 @media only screen and (max-width : 650px) {
 		.sizes_card{display:none !important;}
-	#sec_09 .contacts, #footer, section{padding-left: 40px !important;}
+	#sec_09, #footer, section{
+		padding-left: 40px !important;
+		.contacts{
+			.social{
+				padding-left: 10px;
+			}
+		}
+	}
 		#sec_01{
 		background-position: left 30px top 0 !important;
 	}
@@ -383,7 +413,7 @@
 		line-height: 22px;
 	}
 	h2{
-		font-size: 26px;
+		font-size: 19px;
 		line-height: 30px;
 	}
 	h1{
@@ -400,6 +430,7 @@
 	#sec_02{
 		padding-bottom: 170px;
 		br{display:none;}
+		h2{margin-top: 0;}
 	}
 	#sec_03{
 		padding:30px 0 215px;
@@ -417,6 +448,7 @@
 		}
 	}
 	#sec_05{
+		padding-top: 30px;
 		.item{
 			padding: 10px;
 		}
@@ -450,6 +482,9 @@
 	    margin-top: 20px;
 	  }
 	}
+	#sec_09{
+		.contacts .row{margin: 0;}
+	}
 }
 @media only screen and (max-width : 380px) {
 	#modal_goods{
@@ -468,13 +503,14 @@
 	}
 	#nav{
 		li+li{
-			margin-top: 15px;
+			margin-top: 5px;
 		}
 	}
 }
 
 @media only screen and (max-height : 600px){
 	#nav{
+		li{margin-top: -70px;}
 		li+li{
 			margin-top: 0px;
 		}
@@ -485,5 +521,11 @@
 			display: none;
 		}
 		.contacts{display:none;}
+	}
+}
+
+@media only screen and (max-height : 500px){
+	#nav .callback.trigger{
+		display: none;
 	}
 }

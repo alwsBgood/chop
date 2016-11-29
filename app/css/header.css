@@ -103,17 +103,17 @@ h2 {
 .btndwn:before {
   content: "";
   position: absolute;
-  width: 80px;
-  height: 15px;
-  bottom: -20px;
-  left: 0;
-  background: url(img/slider-prev.png) center no-repeat; }
+  width: 100px;
+  height: 69px;
+  bottom: -45px;
+  left: -15px;
+  background: url(../img/slider-prev.png) center no-repeat; }
 
 .orange {
   color: #fa6b26; }
 
 #sec_01 {
-  background: url(img/sec_01-bg.png) top left 0px no-repeat;
+  background: url(../img/sec_01-bg.png) top left 0px no-repeat;
   background-size: cover;
   position: relative; }
   #sec_01 .bg_text {
@@ -148,7 +148,7 @@ h2 {
 #modal_send {
   position: absolute;
   z-index: 102;
-  background: #0b0b0b url(img/menu-bg.png) top right no-repeat;
+  background: #0b0b0b url(../img/menu-bg.png) top right no-repeat;
   left: 0;
   top: 0;
   width: 100%;
@@ -199,7 +199,7 @@ h2 {
 #modal_nav {
   position: absolute;
   z-index: 101;
-  background: #0b0b0b url(img/menu-bg.png) top right no-repeat;
+  background: #0b0b0b url(../img/menu-bg.png) top right no-repeat;
   left: 0;
   top: 0;
   bottom: 0;
@@ -226,7 +226,8 @@ h2 {
     margin-left: -90px;
     opacity: 0; }
   #modal_nav .field {
-    width: 360px; }
+    max-width: 360px;
+    width: 100%; }
     #modal_nav .field input {
       width: 100%; }
   #modal_nav .field + .field {
@@ -327,11 +328,11 @@ h2 {
     width: 350px;
     margin-left: 200px;
     opacity: 0;
-    display: 0; }
+    visibility: hidden; }
 
 #nav.open {
   width: 50%;
-  background: #0b0b0b url(img/menu-bg.png) top right no-repeat;
+  background: #0b0b0b url(../img/menu-bg.png) top right no-repeat;
   padding-right: 60px; }
   #nav.open li {
     width: 100%; }
@@ -340,7 +341,15 @@ h2 {
       display: inline-block; }
   #nav.open .inner {
     opacity: 1;
-    display: block; }
+    visibility: visible; }
+
+.inner_form {
+  opacity: 0;
+  visibility: hidden; }
+
+.inner_form.visible {
+  opacity: 1;
+  visibility: visible; }
 
 #nav .svg {
   width: 80px;
@@ -354,7 +363,7 @@ h2 {
   fill: none;
   -webkit-transition: stroke-dashoffset 0.5s cubic-bezier(0.25, -0.25, 0.75, 1.25), stroke-dasharray 0.5s cubic-bezier(0.25, -0.25, 0.75, 1.25);
   transition: stroke-dashoffset 0.5s cubic-bezier(0.25, -0.25, 0.75, 1.25), stroke-dasharray 0.5s cubic-bezier(0.25, -0.25, 0.75, 1.25);
-  stroke-width: 30px;
+  stroke-width: 15px;
   stroke-linecap: round;
   stroke: #fff;
   stroke-dashoffset: 0px; }

@@ -242,7 +242,7 @@ $('.slider-small').slick({
 // PREVENT SCROLLING
 
 $('*').click(function() {
-  let modal= $(".md-modal");
+  var modal= $(".md-modal");
   if($('#fullpage').hasClass('fullpage-wrapper')){
     if( modal.hasClass('md-show')){
       $.fn.fullpage.setAllowScrolling(false);
@@ -312,6 +312,7 @@ $(document).ready(function() {
         $('#nav').toggleClass('open');
         if($('#modal_nav').hasClass('open')){
           $('#modal_nav').removeClass('open');
+          $('.inner_form').removeClass('visible');
         }
     });
 
@@ -323,9 +324,15 @@ $(document).ready(function() {
     $('.callback').click(function(){
         if($('#nav').hasClass('open')){
             $('#modal_nav').addClass('open');
+            setTimeout(function(){
+                  $('.inner_form').addClass('visible');
+                }, 400);
         } else {
             $('#nav').addClass('open');
             $('#modal_nav').addClass('open');
+            setTimeout(function(){
+                  $('.inner_form').addClass('visible');
+                }, 400);
         };
     })
 });
@@ -334,7 +341,7 @@ $(document).ready(function() {
 // CUSTOM MODALS
 
 jQuery(document).ready(function($) {
-  $('[class*="modal_good_trigger"').click(function() {
+  $('[class*="modal_good_trigger"]').click(function() {
     setTimeout(function(){
       $('.card').addClass('visible');
     }, 400);

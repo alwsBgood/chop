@@ -1,12 +1,15 @@
 @import url(../libs/niftymodal/component.css);
 @import url(../libs/slick/slick.min.css);
-@import url(../libs/fullPage/jquery.fullpage.min.css);
+@import url(../libs/fullpage/jquery.fullpage.min.css);
 @import url(../fonts/font-awesome/font-awesome.min.css);
+section {
+  border-bottom: 3px solid #000; }
+
 input {
   height: 57px;
   border: 2px solid black;
   padding: 0 20px;
-  font: 18px "HelveticaNeueCyr-Roman", sans-serif; }
+  font: 18px/50px "HelveticaNeueCyr-Roman", sans-serif; }
 
 select {
   height: 50px;
@@ -19,7 +22,7 @@ select {
   background-size: cover;
   position: relative; }
   #sec_02 h2 {
-    margin: 0 0px 50px 0; }
+    margin: -100px 0px 50px 0; }
   #sec_02 ul li {
     font-family: "HelveticaNeueCyr-Thin", sans-serif; }
     #sec_02 ul li .number {
@@ -250,6 +253,7 @@ select {
   background-color: #252525; }
   #footer .politics {
     float: left;
+    margin-left: -15px;
     line-height: 29px; }
     #footer .politics a + a {
       margin-left: 10px;
@@ -270,6 +274,21 @@ select {
     #footer a:hover svg {
       fill: #fa6b26; }
 
+.mobile {
+  display: none !important; }
+
+.present_spray {
+  font: 15px/22px "HelveticaNeueCyr-Light", sans-serif;
+  color: #fa6b26;
+  margin-top: 30px;
+  margin-bottom: 20px; }
+  .present_spray span {
+    font-family: "HelveticaNeueCyr-Bold", sans-serif; }
+  .present_spray img {
+    float: left;
+    margin-top: -7px;
+    margin-right: 15px; }
+
 [id*='modal_good_form'] .field {
   margin-top: 5px; }
 
@@ -277,7 +296,8 @@ select {
   display: inline-block; }
 
 [id*='modal_good_form'] .md-content {
-  overflow: visible !important; }
+  overflow: visible !important;
+  background: none !important; }
 
 [class*='good_card'] {
   display: -webkit-box;
@@ -500,24 +520,6 @@ div[id*="modal_sizes"] {
 
 .md-modal {
   opacity: 0; }
-
-/* SCROLL BAR STYLES*/
-::-webkit-scrollbar {
-  width: 10px; }
-
-/* Track */
-::-webkit-scrollbar-track {
-  -webkit-box-shadow: inset 0 0 20px rgba(0, 0, 0, 0.3); }
-
-/* Handle */
-::-webkit-scrollbar-thumb {
-  -webkit-border-radius: 0px;
-  border-radius: 0px;
-  background: #fa6b26;
-  -webkit-box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.5); }
-
-::-webkit-scrollbar-thumb:window-inactive {
-  background: #fa6b26; }
 
 .hidden {
   height: 0;
@@ -830,12 +832,14 @@ input:-ms-input-placeholder {
       margin-top: 0; }
     #sec_03 .col-6 {
       margin-left: -30px; }
+    #sec_03 .btndwn {
+      left: -500px; }
   #sec_04 {
     background-position: top right -300px; }
   #sec_06, #sec_08 {
     background-position: top right -150px; }
   #sec_08 .btndwn {
-    display: none; }
+    display: none !important; }
   #sec_08 ul li {
     font-size: 16px; }
   #sec_08 ul li + li {
@@ -856,14 +860,30 @@ input:-ms-input-placeholder {
     padding-left: 80px !important; }
   #nav .inner {
     margin-left: 100px; }
+  #sec_08 {
+    background-position: top right -250px; }
   [class*="good_card"] {
     padding-left: 80px; } }
 
 @media only screen and (max-width: 1200px) {
+  .desctop {
+    display: none !important; }
+  .mobile.btn {
+    display: -webkit-box !important;
+    display: -webkit-flex !important;
+    display: -ms-flexbox !important;
+    display: flex !important; }
+  .mobile.btndwn {
+    display: block !important; }
+  .present_spray img {
+    display: none; }
+  .present_spray br {
+    display: none; }
   [class*="good_card"] {
     display: none; }
   section, .fp-tableCell {
-    height: auto !important; }
+    height: auto !important;
+    border-bottom: none; }
   .btndwn {
     position: static;
     display: block;
@@ -894,7 +914,7 @@ input:-ms-input-placeholder {
     background-position: bottom right;
     text-align: center; }
     #sec_02 .btndwn {
-      display: none; }
+      display: none !important; }
     #sec_02 .col-6 {
       width: 100%;
       left: 0; }
@@ -903,6 +923,13 @@ input:-ms-input-placeholder {
     text-align: center;
     background-size: 80%;
     background-position: bottom left; }
+    #sec_03 .mobile {
+      display: -webkit-box !important;
+      display: -webkit-flex !important;
+      display: -ms-flexbox !important;
+      display: flex !important; }
+    #sec_03 .desctop {
+      display: none; }
     #sec_03 h2 {
       margin: 0 0 30px; }
     #sec_03 .col-6 {
@@ -926,9 +953,9 @@ input:-ms-input-placeholder {
   #sec_05 {
     background: none;
     padding: 100px 0; }
-    #sec_05 .mobile {
-      display: block; }
-    #sec_05 .desctop {
+    #sec_05 .row.mobile {
+      display: block !important; }
+    #sec_05 .row.desctop {
       display: none; }
     #sec_05 .item {
       width: 95%;
@@ -949,6 +976,13 @@ input:-ms-input-placeholder {
       left: 0; }
     #sec_07 .btn {
       margin: 30px auto 0px; }
+    #sec_07 .mobile {
+      display: -webkit-box;
+      display: -webkit-flex;
+      display: -ms-flexbox;
+      display: flex; }
+    #sec_07 .desctop {
+      display: none; }
   #sec_08 {
     display: none; }
   #sec_09 {
@@ -960,14 +994,16 @@ input:-ms-input-placeholder {
     #sec_09 .btn {
       margin: 30px auto 40px; }
     #sec_09 .btndwn {
-      display: none; }
+      display: none !important; }
     #sec_09 .col-6 {
       width: 100%;
       left: 0; }
+    #sec_09 .contacts {
+      padding-right: 10px; }
   #nav .desctop {
     display: none; }
   #nav .mobile {
-    display: block; } }
+    display: block !important; } }
 
 @media only screen and (max-width: 992px) {
   #nav.open {
@@ -1052,8 +1088,10 @@ input:-ms-input-placeholder {
 @media only screen and (max-width: 650px) {
   .sizes_card {
     display: none !important; }
-  #sec_09 .contacts, #footer, section {
+  #sec_09, #footer, section {
     padding-left: 40px !important; }
+    #sec_09 .contacts .social, #footer .contacts .social, section .contacts .social {
+      padding-left: 10px; }
   #sec_01 {
     background-position: left 30px top 0 !important; }
   #nav {
@@ -1083,7 +1121,7 @@ input:-ms-input-placeholder {
     font-size: 16px;
     line-height: 22px; }
   h2 {
-    font-size: 26px;
+    font-size: 19px;
     line-height: 30px; }
   h1 {
     font-size: 30px;
@@ -1097,6 +1135,8 @@ input:-ms-input-placeholder {
     padding-bottom: 170px; }
     #sec_02 br {
       display: none; }
+    #sec_02 h2 {
+      margin-top: 0; }
   #sec_03 {
     padding: 30px 0 215px; }
     #sec_03 br {
@@ -1109,8 +1149,10 @@ input:-ms-input-placeholder {
     #sec_04 ul li {
       font-size: 16px;
       line-height: 23px; }
-  #sec_05 .item {
-    padding: 10px; }
+  #sec_05 {
+    padding-top: 30px; }
+    #sec_05 .item {
+      padding: 10px; }
   #sec_06 {
     padding-bottom: 75px; }
   #sec_07 {
@@ -1129,7 +1171,9 @@ input:-ms-input-placeholder {
     float: none;
     width: 100%;
     text-align: center;
-    margin-top: 20px; } }
+    margin-top: 20px; }
+  #sec_09 .contacts .row {
+    margin: 0; } }
 
 @media only screen and (max-width: 380px) {
   #modal_goods .btn_close_modal {
@@ -1141,9 +1185,11 @@ input:-ms-input-placeholder {
   [class*='good_card'] .slider_block {
     width: 350px; }
   #nav li + li {
-    margin-top: 15px; } }
+    margin-top: 5px; } }
 
 @media only screen and (max-height: 600px) {
+  #nav li {
+    margin-top: -70px; }
   #nav li + li {
     margin-top: 0px; }
   #nav .trigger {
@@ -1151,4 +1197,8 @@ input:-ms-input-placeholder {
   #nav .trigger:before {
     display: none; }
   #nav .contacts {
+    display: none; } }
+
+@media only screen and (max-height: 500px) {
+  #nav .callback.trigger {
     display: none; } }
