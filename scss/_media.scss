@@ -25,6 +25,11 @@
 }
 
 @media (min-width: 1201px) and (max-width: 1499px){
+	[class*='good_card']{
+		.slider_block{
+			width: 380px;
+		}
+	}
 	.good_card{
 		.slider_block{
 		  float: left;
@@ -494,11 +499,19 @@
 	}
 }
 
+@media only screen and (max-height : 830px){
+	[class*='good_card']{
+		.slider_block{
+			width: 350px;
+		}
+	}
+}
+
 @media only screen and (max-height : 720px){
 	.sizes_card{display:none !important;}
 	[class*='good_card']{
 		.slider_block{
-			width: 350px;
+			width: 300px;
 		}
 	}
 	#nav{

@@ -349,7 +349,7 @@ select {
       border: 1px solid #fa6b26; }
   [class*='good_card'] .slider_block {
     float: left;
-    width: 530px; }
+    width: 450px; }
   [class*='good_card'] .text_block {
     float: right;
     width: 530px; }
@@ -808,6 +808,8 @@ input:-ms-input-placeholder {
     background-position: top right -150px; } }
 
 @media (min-width: 1201px) and (max-width: 1499px) {
+  [class*='good_card'] .slider_block {
+    width: 380px; }
   .good_card .slider_block {
     float: left;
     width: 430px; }
@@ -1179,11 +1181,15 @@ input:-ms-input-placeholder {
   #modal_goods .btn_close_modal {
     margin: -10px auto 50px !important; } }
 
+@media only screen and (max-height: 830px) {
+  [class*='good_card'] .slider_block {
+    width: 350px; } }
+
 @media only screen and (max-height: 720px) {
   .sizes_card {
     display: none !important; }
   [class*='good_card'] .slider_block {
-    width: 350px; }
+    width: 300px; }
   #nav li + li {
     margin-top: 5px; } }
 
